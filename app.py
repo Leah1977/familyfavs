@@ -108,6 +108,13 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/create_recipe")
+def create_recipe():
+    # option for user to create a recipe
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("create_recipe.html", categories=categories)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
