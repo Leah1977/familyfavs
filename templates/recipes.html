@@ -1,12 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
-    
- 
+
+<ul class="collapsible">
     {% for recipe in recipes %}
-        {{ recipe.recipe_name }}<br>
-        {{ recipe.category_name }}<br>
-        {{ recipe.method }}<br> 
+    <li>
+        <div class="collapsible-header white-text light-green darken-4 text-shadow">
+            <i class="fas fa-carat-down"></i>
+            <strong>{{ recipe.recipe_name }}</strong>
+        </div>
+        <div class="collapsible-body">
+            <strong>{{ recipe.ingredients }}</strong>
+            <p>{{ recipe.method }}</p>
+            <P>{{ recipe.original_url }}</P>
+            <P>{{ recipe.prep_time }}</P>
+            <P>{{ recipe.serves }}</P>
+            <P>{{ recipe_url }}</P>            
+            <p>{{ created_by}}</p>
+        </div>
+    </li>
     {% endfor %}
+</ul>
 
 {% endblock %}
