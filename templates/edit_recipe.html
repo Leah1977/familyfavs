@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-green-text text-darken-4 center-align">Create Recipe</h3>
+<h3 class="light-green-text text-darken-4 center-align">Edit Recipe</h3>
 
 <div class="row card-panel grey lighten-4">
-    <form class="col s12" method = "POST" action = "{{ url_for('create_recipe') }}">
+    <form class="col s12" method = "POST" action = "{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
         <!-- Recipe Title -->
         <div class="row">
             <div class="input-field col s12">
@@ -43,7 +43,6 @@
                 <label for="ingredients">Ingredients:</label>
             </div>
         </div>
-
         <!-- Recipe created by-->
         <div class="row">
             <div class="input-field col s12">
@@ -56,8 +55,8 @@
         <!-- submit button -->
         <div class="row">
             <div class="col s12 center-align">
-                <button class="btn btn-large light-green darken-4 text-shadow-2" type="submit">Create Recipe
-                <i class="fas fa-arrow-alt-circle-right"></i>
+                <button class="btn btn-large light-green darken-4 text-shadow-2" type="submit">Edit Recipe
+                <i class="fas fa-edit"></i>
                 </button>
             </div>
         </div>

@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('select').formSelect();
   
  
-  // credit for code is Code Institute mini project
+  // credit for code - Code Institute mini project
 
   validateMaterializeSelect();
   function validateMaterializeSelect() {
