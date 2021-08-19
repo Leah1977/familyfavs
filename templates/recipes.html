@@ -1,34 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-green-text text-darken-4 center-align">All Recipes</h3>
 
-<ul class="collapsible">
+ 
     {% for recipe in recipes %}
-    <li>
-        <div class="collapsible-header white-text light-green darken-4 text-shadow">
-            <div class="col-3">
-                <i class="fas fa-caret-down"></i>
-                {% if session.user|lower == recipe.created_by|lower %}
-                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small yellow accent-4">Done</a>
-                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small orange accent-4">Edit</a>
-                {% endif %}
-            </div>
-            <div class="col-9">
-                <strong>{{ recipe.recipe_name }}</strong>
-            </div>
-            <div class="collapsible-body">
-                <strong>{{ recipe.ingredients }}</strong>
-                <p>{{ recipe.method }}</p>
-                <P>{{ recipe.original_url }}</P>
-                <P>{{ recipe.prep_time }}</P>
-                <P>{{ recipe.serves }}</P>
-                <P>{{ recipe_url }}</P>            
-                <p>{{ created_by }}</p>
-            </div>    
-        </div>
-    </li>
+        {{ recipe.recipe_name }}<br>
+        {{ recipe.category_name }}<br>
+        {{ recipe.method }}<br> 
     {% endfor %}
-</ul>
+    
 
 {% endblock %}
