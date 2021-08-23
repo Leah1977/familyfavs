@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,600&family=Roboto&display=swap');
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -13,4 +15,140 @@
 .collapsible-header .col strong {
     margin: 6px;
     line-height: 42px;
+}
+
+
+main {
+    flex: 1 0 auto;
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Raleway, sans-serif;
+    background: rgba(200, 228, 209, 0.87);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* ------------------------------------------------------ logo */
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ------------------------------------------------------ heading */
+
+.title {
+    font-family: Lobster, sans-serif;
+    font-size: 3em;
+    border: 20px;
+}
+
+
+
+h3 {
+    font-family: Lobster, sans-serif;
+}
+
+/* ------------------------------------------------------ hero image */
+
+.hero-image {
+    
+    background: url("../images/cover.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: right-center;
+    height: 500px;
+    width: auto;
+    color:rgba(0, 0, 0, 0.4);
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
+}
+
+.hero-outer{
+    height: 500px;
+    overflow: hidden;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+.hero-text {
+    color:rgba(0,0,0, 0.8);
+    text-align: end;
+    margin: 20px;
+    padding: 4px;
+    border: 10px;
+    font-size: 20px;
+    
+ 
+
+}
+
+.hero-text {
+    margin: 50px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hero-text p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: pink;
+    background: green;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero-image .hero-btn:hover {
+    background: pink;
+    color: green;
+}
+/* ------------------------------------------------------ search */
+
+.search { 
+    font-family: Raleway, sans-serif;
+}
+
+/* ------------------------------------------------------ footer */
+.page-footer {
+    background-color: #43A047;
+}
+
+.social-links li a i{
+    color: white;
+    height: 34px;
+    width: 34px;
+    line-height: 10px;
+    font-size: 16px;
+    padding: 12px 0;
+    border-radius: 50%;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+
+
 }
