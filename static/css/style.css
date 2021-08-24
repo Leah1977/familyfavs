@@ -50,10 +50,14 @@ body {
     border: 20px;
 }
 
+.recipes {
+    padding-top: 30px;
+}
 
 
 h3 {
     font-family: Lobster, sans-serif;
+    font-size: 50px;
 }
 
 /* ------------------------------------------------------ hero image */
@@ -130,6 +134,7 @@ h3 {
 
 .search { 
     font-family: Raleway, sans-serif;
+    padding-top: 20px;
 }
 
 /* ------------------------------------------------------ recipe card */
