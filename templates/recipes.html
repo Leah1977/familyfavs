@@ -2,23 +2,23 @@
 {% block content %}
 
 <!-- Welcome -->
-
-<section id="hero-outer">
-    <div class="hero-image">
-        
-        <div class="hero-text">
-            <h1>Welcome to Family Favs</h1>
-            <p>Want to learn all the family favourites. Have a look through our recipes or rather your family recipes!!</p><br>
-            <p>Sign in today to add your own exciting recipes.</p>
-            <a href="{{ url_for('login') }}" class ="hero-btn">Sign In</a>
-            
+<div class="container-fluid container-wrapper">
+    <section id="hero-outer">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to Family Favs</h1>
+                <p>Want to learn all the family favourites. Have a look through our recipes or rather your family recipes!!</p><br>
+                <p>Sign in today to add your own exciting recipes.</p>
+                <a href="{{ url_for('login') }}" class ="hero-btn">Sign In</a>
+            </div>
         </div>
-    </div>
+    </section>
+</div>
 
+
+<div class ="container">
     <h3 class="light-green-text text-darken-4 center-align heading">All Recipes</h3>
-
     <div class="row card-panel green lighten-5 center-align search_box">
-
         <form action="{{ url_for('search') }}" method="POST" class="col-12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m8">
@@ -27,46 +27,56 @@
                     <label for="query">Search Recipes</label>
                 </div>
                 <div class="col s12 m4">
-                    <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-green darken-1 btn text-shadow">
-                        <i class="fas fa-search left"></i> Search
-                    </button>
+                <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
+                <button type="submit" class="light-green darken-1 btn text-shadow">
+                <i class="fas fa-search left"></i> Search
+                </button>
                 </div>
             </div>
         </form>
     </div>
-</section>
+</div>    
 
-    {% if recipes|length >0 %}
-    <ul class="collapsible">
-        {% for recipe in recipes %}
-        <li>
-            <div class="collapsible-header white-text light-green darken-4 text-shadow">
-                <div class="col-3">
-                    <i class="fas fa-caret-down"></i>
-                    {% if session.user|lower == recipe.created_by|lower %}
-                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small yellow accent-4">Done</a>
-                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small orange accent-4">Edit</a>
-                    {% endif %}
-                </div>
-                <div class="col-9">
-                    <strong>{{ recipe.recipe_name }}</strong> : {{recipe.category_name}}
+{% if recipes|length >0 %}
+<ul class="collapsible">
+    {% for recipe in recipes %}
+
+    <div class="container-fluid">
+        <section id= "recipe-card">
+            <div class="col-md-6 col-lg-4">
+                <div class="row">
+                    <!-- credit to -->
+                    <div class="card-body">
+                        {% if recipe.recipe_img_url %}
+                        <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
+                            <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
+                        </a>
+                        {% else %}
+                        <a href = "{{ url_for('get_recipes', recipe_id=recipe_id)}}">
+                            <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
+                        </a>
+                        {% endif %}
+
+                        <div class="card-body">
+                        <h5 class="card-title">{{recipe_name}}</h5>
+                        <p class="card-text">
+                            {{method}}
+                        </p>
+                        <a href="#!" class="btn btn-primary">Full Recipe</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="collapsible-body">
-                <strong>{{ recipe.ingredients }}</strong>
-                <p>{{ recipe.method }}</p>
-                <P>{{ recipe.original_url }}</P>
-                <P>{{ recipe.prep_time }}</P>
-                <P>{{ recipe.serves }}</P>
-                <P>{{ recipe_url }}</P>            
-                <p>{{ created_by }}</p>
-            </div>    
-        </li>
-        {% endfor %}
-    </ul>
+        </section>
+    </div>
+    
+    {% endfor %}
     {% else %}
         <h3 class="red-text text-darken-4 center-align">No results found</h3>
-    {% endif %}
+{% endif %}
+
+<!-- end credit -->
+
+
 
 {% endblock %}

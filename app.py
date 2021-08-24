@@ -202,7 +202,32 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
+@app.route("/subscribe", methods=["GET", "POST"])
+def subscribe():
+    if request.method == "POST":
+        # check if email already exists
+        existing_email = mongo.db.subscribers.find_one(
+            {"email": request.form.get("email").lower()})
+
+        # if existing email
+        if existing_email:
+            flash("Email already exists")
+            return redirect(url_for("get_recipes"))
+            
+        # add subscriber to the database
+        subscribe = {
+            "email": request.form.get("email").lower()
+        }
+
+        mongo.db.subscribers.insert_one(subscribe)
+        flash("Thank you for subscribing")
+    return redirect(url_for("get_recipes"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)  # change to False before submitting
+
+
+

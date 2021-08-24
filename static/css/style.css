@@ -60,12 +60,15 @@ h3 {
 
 .hero-image {
     
-    background: url("../images/cover.jpg") no-repeat center center;
+    background: url("../images/cover.jpg");
     background-size: cover;
-    background-position: right-center;
-    height: 500px;
-    width: auto;
-    color:rgba(0, 0, 0, 0.4);
+    background-position: relative;
+    padding-top: 0.4px;
+    padding-bottom: 20px;
+    height: 50vh;
+    width: 100%;
+    margin-top: 1px;
+    color:rgba(0, 0, 0, 0);
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -73,7 +76,7 @@ h3 {
 }
 
 .hero-outer{
-    height: 500px;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -86,40 +89,36 @@ h3 {
     }
 }
 
-
 .hero-text {
-    color:rgba(0,0,0, 0.8);
     text-align: end;
-    margin: 20px;
-    padding: 4px;
-    border: 10px;
-    font-size: 20px;
-    
- 
-
-}
-
-.hero-text {
-    margin: 50px;
+    color: black;
+    font-family: raleway, sans-serif;
+    font-weight: 600;
 }
 
 .hero-text h1 {
     font-size: 50px;
     font-weight: 500;
+    padding-right: 80px;
+    padding-top: 50px;
+       
 }
 
 .hero-text p {
-    font-size: 25px;
+    font-size: 1em;
     font-weight: 500;
+    padding-right: 80px;
+    
 }
 
 .hero-btn {
     text-decoration: none;
     color: pink;
     background: green;
-    padding: 10px 30px;
     border-radius: 10px;
     margin-top: 20px;
+    margin-right: 80px;
+    padding: 20px;
     display: inline-block;
 }
 
@@ -131,6 +130,15 @@ h3 {
 
 .search { 
     font-family: Raleway, sans-serif;
+}
+
+/* ------------------------------------------------------ recipe card */
+
+.recipe-card {
+    display: inline-block;
+    text-align: center;
+    color: blueviolet;
+    width: 50px;
 }
 
 /* ------------------------------------------------------ footer */
