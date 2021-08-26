@@ -44,6 +44,10 @@ body {
 
 /* ------------------------------------------------------ heading */
 
+nav .brand-logo {
+        font-size: 4.1rem;
+} 
+
 .title {
     font-family: Lobster, sans-serif;
     font-size: 3em;
