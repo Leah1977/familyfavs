@@ -5,19 +5,20 @@
 <div class="container-fluid container-wrapper">
     <section id="hero-outer">
         <div class="hero-image">
-            <div class="hero-text">
-                <h1>Welcome to Family Favs</h1>
-                <p>Want to learn all the family favourites. Have a look through our recipes or rather your family recipes!!</p><br>
-                <p>Sign in today to add your own exciting recipes.</p>
-                <a href="{{ url_for('login') }}" class ="hero-btn">Sign In</a>
-            </div>
+            <div class = "container text-box">
+                <div class="hero-text">
+                    <h1>Welcome to Family Favs</h1>
+                    <p>Want to learn all the family favourites.<br> Have a look through our recipes or rather your family recipes!!</p>
+                    <p>Sign in today to add your own exciting recipes.</p>
+                    <a href="{{ url_for('login') }}" class ="hero-btn">Sign In</a>
+                </div>
+            </div>    
         </div>
     </section>
 </div>
 
 
 <div class ="container recipes">
-    <h3 class="light-green-text text-darken-4 center-align">All Recipes</h3>
     <div class="row card-panel green lighten-5 center-align search_box">
         <form action="{{ url_for('search') }}" method="POST" class="col-12">
             <div class="row valign-wrapper center-align">
@@ -38,42 +39,47 @@
 </div>    
 
 {% if recipes|length >0 %}
-<ul class="collapsible">
-    {% for recipe in recipes %}
 
-    <div class="container-fluid">
-        <section id= "recipe-card">
-            <div class="col-md-6 col-lg-4">
-                <div class="row">
-                    <!-- credit to -->
-                    <div class="card-body">
+<ul class="collapsible">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="light-green-text text-darken-4 center-align">All Recipes</h3>
+                </div>
+            </div>
+            <div class="col s4 recipe-main-item">
+                <div class="row recipe-card">
+                    <!-- credit to https://mdbootstrap.com/docs/standard/components/cards/-->
+                    {% for recipe in recipes %}
+                    <div class="card-body recipe-main-item">
                         {% if recipe.recipe_img_url %}
                         <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
-                            <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
+                        <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
                         </a>
                         {% else %}
                         <a href = "{{ url_for('get_recipes', recipe_id=recipe_id)}}">
-                            <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
+                        <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
                         </a>
                         {% endif %}
-
                         <div class="card-body">
-                        <h5 class="card-title">{{recipe_name}}</h5>
-                        <p class="card-text">
-                            {{method}}
-                        </p>
+                            <h5 class="card-title">{{ recipe.recipe_name }}</h5>
+                            <p class="card-text">
+                            {{ recipe.method }}
+                            </p>
                         <a href="#!" class="btn btn-primary">Full Recipe</a>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    <ul>
     
-    {% endfor %}
     {% else %}
         <h3 class="red-text text-darken-4 center-align">No results found</h3>
 {% endif %}
+
 
 <!-- end credit -->
 

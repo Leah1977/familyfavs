@@ -102,6 +102,7 @@ h3 {
     color: black;
     font-family: raleway, sans-serif;
     font-weight: 600;
+   
 }
 
 .hero-text h1 {
@@ -115,7 +116,7 @@ h3 {
 .hero-text p {
     font-size: 1em;
     font-weight: 500;
-    padding-right: 80px;
+    padding-right: 70px;
     
 }
 
@@ -124,7 +125,6 @@ h3 {
     color: pink;
     background: green;
     border-radius: 10px;
-    margin-top: 20px;
     margin-right: 80px;
     padding: 20px;
     display: inline-block;
@@ -133,6 +133,12 @@ h3 {
 .hero-image .hero-btn:hover {
     background: pink;
     color: green;
+}
+
+.text-box {
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
 }
 /* ------------------------------------------------------ search */
 
@@ -144,11 +150,26 @@ h3 {
 /* ------------------------------------------------------ recipe card */
 
 .recipe-card {
-    display: inline-block;
-    text-align: center;
-    color: blueviolet;
-    width: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    margin: 0 auto;
 }
+
+.recipe-main-item {
+    width: 50%;
+    text-align:center;
+    padding: 0;
+    
+}
+
+.card-body {
+    -webkit-box-flex: unset;
+    -ms-flex: unset;
+    flex: unset;
+    padding: 1rem;
+}
+
 
 /* ------------------------------------------------------ footer */
 .page-footer {
@@ -175,3 +196,57 @@ h3 {
     padding-left: 15px;
 }
 
+/* ---------------------------------------------------------Media Queries*/
+
+@media screen and (max-width: 800px) {
+
+nav .brand-logo {
+        font-size: 2.1rem;
+} 
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.hero-text h1 {
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 16px;
+    padding-top: 10px;
+}
+
+.hero-text p {
+    font-size: 8px;
+    font-weight: 500;
+    padding-right: 16px;
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: pink;
+    background: green;
+    border-radius: 15px;
+    margin-right: 16px;
+    padding: 10px;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.recipe-main-item {
+    width: 80vw;
+    padding-left: 25px;
+    
+}
+
+.hero-image {
+    height: 30vh;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+.hero-outer{
+    height: 30vh;
+}
