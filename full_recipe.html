@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="light-green-text text-darken-4 center-align">{{ recipe.recipe_name }}</h3>
+
+<div class="row">
+    <div class="col s8 left-align">
+        {% for recipe in recipes %}
+            <div class="card-body recipe-main-item">
+                {% if recipe.recipe_img_url %}
+                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
+                <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
+                </a>
+                {% else %}
+                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id)}}">
+                <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
+                </a>
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ recipe.recipe_name }}</h5>
+                    <p class="card-text">
+                    {{ recipe.method }}
+                    </p>
+                <a href="{{ url_for('full_recipe', recipe_id=recipe_id) }}" class="btn btn-primary">Close</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col s4">
+            <div class="card light-green center-align">
+                <div class="card-image">
+                <img src="static/images/pastasalad.jpg">
+                <span class="card-title">{{ category.category_name }}</span>
+                </div>
+                <div class="card-content white-text">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                <a href="#">Link to original recipe</a>
+                <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn green accent-4">Edit</a>
+                <a href="{{ url_for('delete_category', category_id=category._id) }}" class="btn red accent-4">Delete</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

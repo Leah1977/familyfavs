@@ -67,7 +67,7 @@
                             <p class="card-text">
                             {{ recipe.method }}
                             </p>
-                        <a href="#!" class="btn btn-primary">Full Recipe</a>
+                        <a href="{{ url_for('full_recipe', recipe_id=recipe_id) }}" class="btn btn-primary">Full Recipe</a>
                         </div>
                     </div>
                     {% endfor %}

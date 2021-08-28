@@ -213,7 +213,7 @@ def subscribe():
         if existing_email:
             flash("Email already exists")
             return redirect(url_for("get_recipes"))
-            
+
         # add subscriber to the database
         subscribe = {
             "email": request.form.get("email").lower()
@@ -224,10 +224,20 @@ def subscribe():
     return redirect(url_for("get_recipes"))
 
 
+@app.route("/full_recipe/<recipe_id>")
+def full_recipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+
+    if not recipe:
+        return render_template("errorhandlers/404.html")
+    
+    return render_template(
+        "recipes/full_recipe.html", recipe=recipe)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)  # change to False before submitting
-
 
 
