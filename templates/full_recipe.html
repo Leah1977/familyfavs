@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-green-text text-darken-4 center-align">{{recipe.recipe_name}}</h3>
+<!-- recipe title -->
+<div class="row">
+    <div class="col s12">
+        <h3 class="light-green-text text-darken-4 center-align recipe-title">{{recipe.recipe_name}}</h3>
+    </div>
+</div>
 
 <!-- full recipe description -->
 
@@ -40,6 +45,10 @@
             </ul>
         </div>
     </div>
+    <div class="card-action">
+        <a href="{{ url_for('get_recipes') }}">Return to homepage</a>
+        <a href="{{recipe.recipe_url}}" target="_blank">See orignal recipe</a>
+      </div>
 </div>
 
 {% endblock %}

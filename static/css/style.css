@@ -172,6 +172,26 @@ h3 {
 }
 
 
+/* ------------------------------------------------------ full recipe */
+
+.recipe-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.full-recipe-image {
+    width: 400px;
+    height: 400px;
+
+}
+
+.card-action a {
+    padding-bottom: 40px;
+    color: green;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+}
 /* ------------------------------------------------------ 404 */
 
 .egg-image {
