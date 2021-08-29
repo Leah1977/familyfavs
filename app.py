@@ -19,6 +19,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# ----------------------------------------------------------------- Home Page
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
@@ -26,6 +27,7 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+# ----------------------------------------------------------------- Search
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -33,6 +35,7 @@ def search():
     return render_template("recipes.html", recipes=recipes)
 
 
+# ----------------------------------------------------------------- Registration
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -68,6 +71,7 @@ def register():
     return render_template("register.html")
 
 
+# ----------------------------------------------------------------- Log In
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -96,6 +100,7 @@ def login():
     return render_template("login.html")
 
 
+# ----------------------------------------------------------------- Users
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # get the session username from the database
@@ -108,6 +113,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+# ----------------------------------------------------------------- Log out
 @app.route("/logout")
 def logout():
     # remove user from session cookies
@@ -116,6 +122,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# -------------------------------------------------------------- Create Recipe
 @app.route("/create_recipe", methods=["GET", "POST"])
 def create_recipe():
     # option for user to create a recipe
@@ -135,6 +142,7 @@ def create_recipe():
     return render_template("create_recipe.html", categories=categories)
 
 
+# ----------------------------------------------------------------- Edit Recipe
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
@@ -155,6 +163,7 @@ def edit_recipe(recipe_id):
         )
 
 
+# -------------------------------------------------------------- Delete Recipe
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
@@ -162,12 +171,14 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
+# ----------------------------------------------------------------- Categories
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
+# ----------------------------------------------------------------- Add Category
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
@@ -181,6 +192,7 @@ def add_category():
     return render_template("add_category.html")
 
 
+# --------------------------------------------------------------- Edit Category
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -195,6 +207,7 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
+# -------------------------------------------------------------- Delete Category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
@@ -202,6 +215,7 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
+# ----------------------------------------------------------------- Subscribe
 @app.route("/subscribe", methods=["GET", "POST"])
 def subscribe():
     if request.method == "POST":
@@ -224,6 +238,7 @@ def subscribe():
     return redirect(url_for("get_recipes"))
 
 
+# ----------------------------------------------------------------- Full Recipe
 @app.route("/full_recipe/<recipe_id>")
 def full_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -235,11 +250,13 @@ def full_recipe(recipe_id):
         "full_recipe.html", recipe=recipe)
 
 
+# ----------------------------------------------------------- Error Handlers
 @app.errorhandler(404)
 def error(e):
     return render_template("/404.html"), 404
 
 
+# --------------------------------------------------------- Run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
