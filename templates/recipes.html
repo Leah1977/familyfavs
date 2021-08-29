@@ -65,7 +65,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{ recipe.recipe_name }}</h5>
                                     <p class="card-text">
-                                    {{ recipe.method }}
+                                    {{ recipe.created_by }}
                                     </p>
                                 <a href="{{ url_for('full_recipe', recipe_id=recipe._id) }}" class="btn btn-primary">Full Recipe</a>
                                 </div>
