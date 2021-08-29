@@ -229,15 +229,18 @@ def full_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
     if not recipe:
-        return render_template("errorhandlers/404.html")
-    
+        return render_template("/404.html")
+
     return render_template(
-        "recipes/full_recipe.html", recipe=recipe)
+        "full_recipe.html", recipe=recipe)
+
+
+@app.errorhandler(404)
+def error(e):
+    return render_template("/404.html"), 404
 
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)  # change to False before submitting
-
-

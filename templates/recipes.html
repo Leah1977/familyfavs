@@ -52,24 +52,24 @@
                 <div class="row recipe-card">
                     <!-- credit to https://mdbootstrap.com/docs/standard/components/cards/-->
                     {% for recipe in recipes %}
-                    <div class="card-body recipe-main-item">
-                        {% if recipe.recipe_img_url %}
-                        <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
-                        <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
-                        </a>
-                        {% else %}
-                        <a href = "{{ url_for('get_recipes', recipe_id=recipe_id)}}">
-                        <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
-                        </a>
-                        {% endif %}
-                        <div class="card-body">
-                            <h5 class="card-title">{{ recipe.recipe_name }}</h5>
-                            <p class="card-text">
-                            {{ recipe.method }}
-                            </p>
-                        <a href="{{ url_for('full_recipe', recipe_id=recipe_id) }}" class="btn btn-primary">Full Recipe</a>
+                        <div class="card-body recipe-main-item">
+                            {% if recipe.recipe_img_url %}
+                                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
+                                <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
+                                </a>
+                                {% else %}
+                                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id)}}">
+                                <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
+                                </a>
+                            {% endif %}
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ recipe.recipe_name }}</h5>
+                                    <p class="card-text">
+                                    {{ recipe.method }}
+                                    </p>
+                                <a href="{{ url_for('full_recipe', recipe_id=recipe_id) }}" class="btn btn-primary">Full Recipe</a>
+                                </div>
                         </div>
-                    </div>
                     {% endfor %}
                 </div>
             </div>

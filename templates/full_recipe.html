@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="light-green-text text-darken-4 center-align">{{ recipe.recipe_name }}</h3>
+
+<!-- full recipe description -->
+
+<div class="container">
+    <div class="row">
+        <div class="col s4">
+            <img src= "{{ recipes.recipe_img_url }}" class="full-recipe-image" alt="full recipe image">
+        </div>
+        <div class="col s8">
+            <h5>Category: {{ recipe.category }}</h5>
+            <h5>Created_by: {{ recipe.created_by }}</h5>
+            <h5>Prep Time: {{ recipe.prep_time }}</h5>
+            <h5>Serves: {{ recipe.serves }}</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h4>Ingredients</h4>
+            <hr>
+            <ul>
+                {% for ingredient in recipe.ingredients.split("\n") %}
+                    <li>
+                        <h6>{{ ingredient }}</h6>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <h4>Method</h4>
+            <hr>
+            <ul>
+                {% for method in recipe.method.split("\n") %}
+                    <li>
+                        <h6>{{ method }}</h6>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
