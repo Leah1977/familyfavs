@@ -2,6 +2,7 @@
 
 
 ### Click here for a link to the live project on GitHub [Family Favs](https://leah1977.github.io/FamilyFavs/)
+### Click here for a link to the live project on Heroku [Family Favs](https://family-favs-project.herokuapp.com)
 
 A Data-Centric Development Project for Milestone 3.
   
