@@ -1,104 +1,120 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Milestone Project 3 - Family Favs
 
-Welcome Leah1977,
+### Click here for a link to the live project on GitHub [Family Favs](https://leah1977.github.io/FamilyFavs/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+A Data-Centric Development Project for Milestone 3.
+  
+The project is a web applications based on the creation of a recipe book.  It allows users to Create, Read, Update and Delete Recipes.
 
-## Gitpod Reminders
+## Table of Contents.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. [Introduction](#introduction)
 
-`python3 -m http.server`
+2. [UX](#ux)
 
-A blue button should appear to click: _Make Public_,
+ - [Project-Goals](#project-goals)
 
-Another blue button should appear to click: _Open Browser_.
+ - [Strategy](#strategy)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ - [Scope](#scope)
 
-A blue button should appear to click: _Make Public_,
+ - [Skeleton](#skeleton)
 
-Another blue button should appear to click: _Open Browser_.
+ - [Features](#features)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ - [Design](#design)
 
-To log into the Heroku toolbelt CLI:
+3. [Project-Display](#project-display)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+4. [Technologies](#technologies)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+5. [Testing](#testing)
 
-------
+6. [Debugging](#testing)
 
-## Release History
+7. [Deployment](#deployment)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+8. [Acknowledgements](#acknowledgements)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Introduction
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  
+## Welcome!
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### This site was built using [GitHub Pages](https://pages.github.com/)/ and [Heroku](https://heroku.com)
+  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+I have created a mobile-first project.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# Family Favs
+This is a data-centric web application.  I created this app to allow friends and family to grow and share family favourite recipes.  Each user can register and log in to add new recipes, edit old recipes, read others recipes and delete recipes they no longer wish to share.
+ 
+There is also an admin user.  The admin user will have the permission required to create a new category.
+  
+### What value does it provide to its users.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+This app encourages friends and family connectivity through a love of cooking.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+It provides a valuable resource for children to learn and create family recipes.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### What value does it provide to the site owner.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+This web application will provide the site owner with a valuable database of recipes to share with other family and friends.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The app can be enjoyed by all aspiring family cooks.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+### Here is a demonstrating of how my web app looks on different screen sizes using [Am I Responsive Website](http://ami.responsivedesign.is/)
 
-## FAQ about the uptime script
+ 
+![Am I responsive](assets/images/.png)
 
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The app will resize according to the different screen sizes.
 
 ---
 
-Happy coding!
+#### This project will include four separate pages. 
+
+* Home page.
+
+* Registration Form
+
+* Sign in Form
+
+* Recipe page
+
+* 404 page, which has a link back to the home page without using browser navigation.
+
+## Home page
+
+The home page is made up of the title “Family Favs”.
+
+There is a drop-down, select menu to the right, which expands to show a list of options
+
+![dropdown menu option](.png)
+
+There is a footer on the home page.  This displays social links and a sign up to our newsletter option.  
+
+## Registeration Form
+
+There is a registration form where users can fill out their information, to allow them to login and create, read, update or delete recipes. 
+
+![Registration Form](assets/images/.png)
+
+  
+## Log In Form.
+
+There will be a log in Form where registered users can fill in their user name and password to access further options to create, read, update or delete recipes.  
+
+## Sign up Form
+
+This page will allow the player to sign up for further information on updates for our web application.
+
+![Sign Up](assets/images//signup.png)
+
+The sign-up form is to register with our site to be notifie of updates.
+
+## Features left to implement
