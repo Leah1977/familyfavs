@@ -417,3 +417,57 @@ In this project, I used the following to help build my website.
 * [JavaScript](www.javascript.com)
 
 ---
+## In this project, I used the following to help build my website.
+
+  
+
+Code used throughout this project was learned and implemented from the [Code Institute Diploma Programme](https://codeinstitue.net)
+  
+
+### [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/5.1.3.0/css/font-awesome.min.css) for its excellent choice of icons.
+
+### [Google Fonts](https://fonts.googleapis.com/css2?)
+
+### Images
+
+  
+
+Images for this app were located in the clipart-library
+
+  
+
+[Card Images](http://clipart-library.com/lime.html)
+
+  http://clipart-library.com/clip-art/50-504289_broken-egg-png-clip-art-egg-clipart-transparent.htm
+
+http://clipart-library.com/images_k/eggs-transparent-background/eggs-transparent-background-5.jpg
+  
+
+Lemon and Lime Logo/Card Picture made with [Canva](www.canva.com)
+
+  
+
+logo.png
+
+Cover photo
+
+Photo by [Brooke Lark](https://unsplash.com/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/cookbook?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+  
+pasta salad
+Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pasta-salad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+ chicken curry
+  Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/chicken-curry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+ 
+  
+ chocolate cake
+ Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/chocolate-cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+ 
+ Beef Stew
+ Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/beef-stew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+ 
+ Meringue Roulade
+ https://images.unsplash.com/photo-1505976378723-9726b54e9bb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80
+ 
+
