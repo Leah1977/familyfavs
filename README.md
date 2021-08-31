@@ -470,4 +470,19 @@ Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=u
  Meringue Roulade
  https://images.unsplash.com/photo-1505976378723-9726b54e9bb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80
  
+## Further References
+
+- Confident Coding by Rob Percival
+
+- Confident Web design by Kenny Wood
+
+- Patreon 
+
+- [YouTube](https://www.youtube.com/) 
+
+- [W3Schools](https://www.w3schools.com/) used for information to help in css styling
+
+- [AmIResponsive](http://ami.responsivedesign.is/)
+
+
 
