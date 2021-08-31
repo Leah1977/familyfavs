@@ -11,7 +11,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col s12 m8 offset-m2">
+    <div class="col s12 center-align">
         <h4 class="center-align">
             {{username}}'s Recipes
         </h4>
@@ -21,30 +21,18 @@
 {% for recipe in recipes %}
     <div class="row">
         <div class="col s12 m7">
-        <div class="card">
-            {% if recipe.recipe_img_url %}
-                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
-                <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
-                </a>
-                {% else %}
-                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id)}}">
-                <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
-                </a>
-            {% endif %}
-            <span class="card-title">{{ recipe.recipe_name }}</span>
+            <div class="card">
+                {% if session.user|lower == recipe.created_by|lower %}
+                    <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
+                    <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
+                    </a>
+                    <a href="" class="btn-small green accent-4">Done</a>
+                {% endif %}
             </div>
-            <div class="card-content">
-                
-            </div>
-            <div class="card-action">
-                <a href="{{ url_for('full_recipe', recipe_id=recipe._id) }}" class="btn btn-primary">Full Recipe</a>
-            </div>
-        </div>
         </div>
     </div>
+
+    
+
 {% endfor %}
-  
-  
-
-
 {% endblock %}

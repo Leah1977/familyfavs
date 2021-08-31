@@ -40,7 +40,7 @@ def register():
     # option for user to register
     if request.method == "POST":
 
-        username = request.form.get("username").lower(),
+        # username = request.form.get("username").lower(),
         password = request.form.get("password")
         confirm_password = request.form.get("confirm_password")
         print(confirm_password)
@@ -105,13 +105,11 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     # get users recipes from the database
-    recipe = mongo.db.recipe.find_one(
-        {"recipe": session["user"]})["recipe"]
-    )
+    # recipe = mongo.db.recipe.find_one(
+    # {"recipe": session["user"]})["recipe"]
 
     if session["user"]:
         return render_template("profile.html", username=username)
-
     return redirect(url_for("login"))
 
 
@@ -180,7 +178,6 @@ def get_categories():
 
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
-    # option to add a category
     if request.method == "POST":
         category = {
             "category_name": request.form.get("category_name")
