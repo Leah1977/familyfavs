@@ -40,7 +40,8 @@
 
 {% if recipes|length >0 %}
 
-<ul class="collapsible">
+
+
     
         <div class="container-fluid">
             <div class="row">
@@ -48,6 +49,17 @@
                     <h3 class="light-green-text text-darken-4 center-align">All Recipes</h3>
                 </div>
             </div>
+            <ul class="collapsible">
+                {% for category in categories %}
+                <li>
+                    <div class="collapsible-header green-text light-green darken-4 text-shadow"><i class="fas fa-caret-down"></i>{{ category.category_name }}</div>
+                    <div class="collapsible-body">
+                        <strong>{{ recipe.recipe_name}}</strong>
+                        <p>{{ recipe.recipe_description }}</p> 
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
             <div class="col s4 recipe-main-item">
                 <div class="row recipe-card">
                     <!-- credit to https://mdbootstrap.com/docs/standard/components/cards/-->
@@ -74,7 +86,7 @@
                 </div>
             </div>
         </div>
-    </ul>
+    
     
     {% else %}
         <h3 class="red-text text-darken-4 center-align">No results found</h3>
