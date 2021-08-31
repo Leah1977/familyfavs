@@ -19,25 +19,25 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# ----------------------------------------------------------------- Home Page
 @app.route("/")
 @app.route("/get_recipes")
+# Home page
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
 
 
-# ----------------------------------------------------------------- Search
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    # option for user to search for a recipe
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
 
 
-# ----------------------------------------------------------------- Registration
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    # option for user to register
     if request.method == "POST":
 
         username = request.form.get("username").lower(),
@@ -71,7 +71,6 @@ def register():
     return render_template("register.html")
 
 
-# ----------------------------------------------------------------- Log In
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -100,12 +99,15 @@ def login():
     return render_template("login.html")
 
 
-# ----------------------------------------------------------------- Users
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # get the session username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
+    # get users recipes from the database
+    recipe = mongo.db.recipe.find_one(
+        {"recipe": session["user"]})["recipe"]
+    )
 
     if session["user"]:
         return render_template("profile.html", username=username)
@@ -113,7 +115,6 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-# ----------------------------------------------------------------- Log out
 @app.route("/logout")
 def logout():
     # remove user from session cookies
@@ -122,7 +123,6 @@ def logout():
     return redirect(url_for("login"))
 
 
-# -------------------------------------------------------------- Create Recipe
 @app.route("/create_recipe", methods=["GET", "POST"])
 def create_recipe():
     # option for user to create a recipe
@@ -142,9 +142,9 @@ def create_recipe():
     return render_template("create_recipe.html", categories=categories)
 
 
-# ----------------------------------------------------------------- Edit Recipe
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    # option for user to edit a recipe
     if request.method == "POST":
         submit = {
             "recipe_name": request.form.get("recipe_name"),
@@ -153,6 +153,7 @@ def edit_recipe(recipe_id):
             "ingredients": request.form.getlist("ingredients"),
             "created_by": session["user"]
         }
+        # update edited recipe to the database
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe successfully updated")
 
@@ -163,28 +164,28 @@ def edit_recipe(recipe_id):
         )
 
 
-# -------------------------------------------------------------- Delete Recipe
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    # delete a recipe from the database
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe successfully deleted")
     return redirect(url_for("get_recipes"))
 
 
-# ----------------------------------------------------------------- Categories
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
-# ----------------------------------------------------------------- Add Category
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
+    # option to add a category
     if request.method == "POST":
         category = {
             "category_name": request.form.get("category_name")
         }
+        # add a category to the database
         mongo.db.categories.insert_one(category)
         flash("New category added")
         return redirect(url_for("get_categories"))
@@ -192,13 +193,13 @@ def add_category():
     return render_template("add_category.html")
 
 
-# --------------------------------------------------------------- Edit Category
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name")
         }
+        # update category in database
         mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
         flash("Category Successfully Updated")
         return redirect(url_for("get_categories"))
@@ -207,15 +208,14 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
-# -------------------------------------------------------------- Delete Category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
+    # delete category from the database
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Successfully Deleted")
     return redirect(url_for("get_categories"))
 
 
-# ----------------------------------------------------------------- Subscribe
 @app.route("/subscribe", methods=["GET", "POST"])
 def subscribe():
     if request.method == "POST":
@@ -238,8 +238,8 @@ def subscribe():
     return redirect(url_for("get_recipes"))
 
 
-# ----------------------------------------------------------------- Full Recipe
 @app.route("/full_recipe/<recipe_id>")
+# show full recipe to user
 def full_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
@@ -250,13 +250,13 @@ def full_recipe(recipe_id):
         "full_recipe.html", recipe=recipe)
 
 
-# ----------------------------------------------------------- Error Handlers
+# show user 404 error page if page does not exist
 @app.errorhandler(404)
 def error(e):
     return render_template("/404.html"), 404
 
 
-# --------------------------------------------------------- Run the application
+# Run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

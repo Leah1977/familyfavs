@@ -1,8 +1,9 @@
-# Milestone Project 3 - Family Favs
+# Milestone Project 3 - Family Favs
+
 
 ### Click here for a link to the live project on GitHub [Family Favs](https://leah1977.github.io/FamilyFavs/)
 
-A Data-Centric Development Project for Milestone 3.
+A Data-Centric Development Project for Milestone 3.
   
 The project is a web applications based on the creation of a recipe book.  It allows users to Create, Read, Update and Delete Recipes.
 
@@ -38,45 +39,42 @@ The project is a web applications based on the creation of a recipe book.  It 
 
 
   
+## Introduction
 
-## Introduction
+## Welcome!
 
-  
-## Welcome!
+### This site was built using [GitHub Pages](https://pages.github.com/)/ and [Heroku](https://heroku.com)
 
-### This site was built using [GitHub Pages](https://pages.github.com/)/ and [Heroku](https://heroku.com)
-  
-
-I have created a mobile-first project.
+I have created a mobile-first project.
 
 # Family Favs
+
 This is a data-centric web application.  I created this app to allow friends and family to grow and share family favourite recipes.  Each user can register and log in to add new recipes, edit old recipes, read others recipes and delete recipes they no longer wish to share.
- 
+
 There is also an admin user.  The admin user will have the permission required to create a new category.
   
-### What value does it provide to its users.
+### What value does it provide to its users.
 
 This app encourages friends and family connectivity through a love of cooking.
 
 It provides a valuable resource for children to learn and create family recipes.
 
-### What value does it provide to the site owner.
+### What value does it provide to the site owner.
 
 This web application will provide the site owner with a valuable database of recipes to share with other family and friends.
 
 The app can be enjoyed by all aspiring family cooks.
 
-
-### Here is a demonstrating of how my web app looks on different screen sizes using [Am I Responsive Website](http://ami.responsivedesign.is/)
+### Here is a demonstrating of how my web app looks on different screen sizes using [Am I Responsive Website](http://ami.responsivedesign.is/)
 
  
-![Am I responsive](assets/images/.png)
+![Am I responsive](static/images/amiresponsive.png)
 
 The app will resize according to the different screen sizes.
 
 ---
 
-#### This project will include four separate pages. 
+#### This project will include four separate pages. 
 
 * Home page.
 
@@ -88,7 +86,7 @@ The app will resize according to the different screen sizes.
 
 * 404 page, which has a link back to the home page without using browser navigation.
 
-## Home page
+## Home page
 
 The home page is made up of the title “Family Favs”.
 
@@ -98,7 +96,7 @@ There is a drop-down, select menu to the right, which expands to show a lis
 
 There is a footer on the home page.  This displays social links and a sign up to our newsletter option.  
 
-## Registeration Form
+## Registration Form
 
 There is a registration form where users can fill out their information, to allow them to login and create, read, update or delete recipes. 
 
@@ -117,22 +115,21 @@ This page will allow the player to sign up for further information o
 
 The sign-up form is to register with our site to be notifie of updates.
 
-## Features left to implement
+### Features left to implement
 
-# UX
+# UX
 
-## Skeleton:
+## Skeleton:
 
-### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
+### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
+ 
+### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/Wireframes.pdf)
 
-### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/Wireframes.pdf)
 
-
-## Project Goals.
+## Project Goals.
 
   
-
-### This project provides an back-end user centric web application.  It is intended to provide a space where family and friends can share recipes.
+### This project provides an back-end user centric web application.  It is intended to provide a space where family and friends can share recipes.
 
 
 * To allow the user to create their own recipes.
@@ -141,9 +138,9 @@ The sign-up form is to register with our site to be notifie of update
 
 * To allow the user to delete previously added recipes.
 
-## Strategy
+## Strategy
 
-### This website is for users looking to create and share recipes.
+### This website is for users looking to create and share recipes.
 
 * I want to provide an application for users to search for recipes and add their own.
 
@@ -151,11 +148,10 @@ The sign-up form is to register with our site to be notifie of update
 
 * I want the user to navigate the site with ease.
 
-## User Story 1
+## User Story 1
 
   
-
-### What I expect to find on a recipe app?
+### What I expect to find on a recipe app?
 
 1. I expect to be able to navigate around the app with ease.
 
@@ -166,13 +162,11 @@ The sign-up form is to register with our site to be notifie of update
 5. I would like to be able to add my own recipes.
 
 
-## User Story 2
+## User Story 2
 
   As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
 
-  
-
-### What I expect to find on a web application?
+### What I expect to find on a web application?
 
   
 
@@ -184,11 +178,9 @@ The sign-up form is to register with our site to be notifie of update
 
   
 
-## User Story 3
+## User Story 3
 
-  
-
-### Would this game be suitable for younger family members?
+### Would this game be suitable for younger family members?
 
   
 
@@ -202,12 +194,9 @@ The sign-up form is to register with our site to be notifie of update
 
 As a user, I would like to be able to add my own recipes and notes for viewing.
   
+## User Story 4
 
-## User Story 4
-
-  
-
-### Would this app be suitable for sharing recipes?
+### Would this app be suitable for sharing recipes?
 
   
 
@@ -272,11 +261,9 @@ Ideas -  have a gallery to put up tried and tested recipes.
 
 With these user stories in mind, I put together some wireframes.  I included all the primary requirements and issues that were raised from my user story research.
 
-## Scope
+## Scope
 
-  
-
-### Essentials will include
+### Essentials will include
 
   
 
@@ -286,23 +273,16 @@ With these user stories in mind, I put together some wireframes.  I�
 
 * Delete Recipe function
 
- 
+## Features
 
-## Features
-
-  
-
-#### This project will include four separate pages to be available to all users.
-
-  
+#### This project will include four separate pages to be available to all users.
 
 * Home page
-
 * Recipes page
 * Registration Form
 * Sign In Form
 
-#### This project will include five separate pages to be available to all registered and loggin in users only.
+#### This project will include five separate pages to be available to all registered and loggin in users only.
 
 * Home page
 * Profile page
@@ -310,7 +290,7 @@ With these user stories in mind, I put together some wireframes.  I�
 * Edit Recipes page
 * Log out option
 
-#### This project will include a further option for the admin user only.
+#### This project will include a further option for the admin user only.
 
 * Home page
 * Profile page
@@ -321,32 +301,20 @@ With these user stories in mind, I put together some wireframes.  I�
 
   
 
-## Color Scheme
+## Color Scheme
 
-  
+### I will use the colours in the main body, header and footer
 
-### I will use the colours in the main body, header and footer
-
-  
 
 ![Color Scheme](/colours.png)
 
-  
-
 My primary colours will be green and yellow.  I will use variations of this colour to add designs that stand out and appeal to the user.
-
-  
-  
 
 I used [Coolers](http://www.coolers.co) to generate my colours for the project. I then used variations within the project.
 
-  
+## Typography
 
-## Typography
-
-  
-
-### I will use the following fonts throughout the website for consistency in style.
+### I will use the following fonts throughout the website for consistency in style.
 
 
 * Eczar
@@ -365,14 +333,11 @@ I chose this for the main app title.
 
 * Sans Serif as a back up
 
-## Additional Features
+## Additional Features
 
   
-  
+## Project display
 
-## Project Display
-
-  
 
 This project is responsive to appear on different screen sizes.
 
@@ -385,8 +350,7 @@ This project will have specific responses depending on the users’ de
 There will be the main navigation system and structured layout.
 
   
-
-## Languages
+## Languages
 
   
 
@@ -396,7 +360,7 @@ There will be the main navigation system and structured layout.
 
 * [JavaScript](http://www.javascript.com).
 
-## Technologies
+## Technologies
  
 
 In this project, I used the following to help build my website.
@@ -417,7 +381,7 @@ In this project, I used the following to help build my website.
 * [JavaScript](www.javascript.com)
 
 ---
-## In this project, I used the following to help build my website.
+## In this project, I used the following to help build my website.
 
   
 
@@ -428,7 +392,7 @@ Code used throughout this project was learned and implemented from the
 
 ### [Google Fonts](https://fonts.googleapis.com/css2?)
 
-### Images
+### Images
 
   
 
@@ -470,7 +434,7 @@ Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=u
  Meringue Roulade
  https://images.unsplash.com/photo-1505976378723-9726b54e9bb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80
  
-## Further References
+## Further References
 
 - Confident Coding by Rob Percival
 
@@ -484,23 +448,17 @@ Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=u
 
 - [AmIResponsive](http://ami.responsivedesign.is/)
 
-## Testing
+## Testing
 
 [Testing Section](TESTING.md)
 
-## Deployment
-
+## Deployment
   
-  
-
 I used the programme [Gitpod](www.gitpod.io) in the development of this project.  I pushed it to GitHub using the CLI, which is built into Gitpod.
+  
+### To deploy this project to GitHub from its Gitpod repository - please follow these steps.
 
   
-
-### To deploy this project to GitHub from its Gitpod repository - please follow these steps.
-
-  
-
 ## Deployment
 
 This project was deployed to Heroku with the following steps:
@@ -530,7 +488,7 @@ This project was deployed to Heroku with the following steps:
 12. Go to the app Overview page and when the build is finished, click 'Open App'
 
   
-### To clone this project into Gitpod, you should follow these steps.
+### To clone this project into Gitpod, you should follow these steps.
 
   
 1. Open your Github account or create one.
@@ -547,7 +505,7 @@ This project was deployed to Heroku with the following steps:
 
 7. This will trigger a new gitpod workspace that you can work on.
 
-## Acknowledgements
+### Acknowledgements
 
   
 Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my third Milestone Project.
@@ -558,6 +516,6 @@ Thanks also to support from the Slack Community.
 
 Thanks also to my husband and family for supporting me through this project and providing invaluable feedback.
 
-### End of README
+### End of README
 
 [Return to Table of Contents](#table-of-contents)
