@@ -484,5 +484,80 @@ Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=u
 
 - [AmIResponsive](http://ami.responsivedesign.is/)
 
+## Testing
 
+[Testing Section](TESTING.md)
 
+## Deployment
+
+  
+  
+
+I used the programme [Gitpod](www.gitpod.io) in the development of this project.  I pushed it to GitHub using the CLI, which is built into Gitpod.
+
+  
+
+### To deploy this project to GitHub from its Gitpod repository - please follow these steps.
+
+  
+
+## Deployment
+
+This project was deployed to Heroku with the following steps:
+
+1.  Ensure your app has debug mode set to False when deploying.
+
+2.  Add a file called Procfile with no extension to your project directory and add web: python app.py
+
+3.  Heroku can install dependencies from a requirements.txt or a Pipfile
+
+4.  To create a requirements.txt run pip freeze > requirements.txt
+
+5.  To create a Pipfile run pip install pipenv, pipenv install
+
+6.  Create an account on Heroku and create a new app.
+
+7.  In your app dashboard, in the deploy section, select 'Connect to GitHub'
+
+8.  Select the GitHub repository that contains your project.
+
+9.  Select Automatic deploys and choose your desired branch.
+
+10. Go to the app settings on Heroku and click 'Reveal Config Vars'
+
+11. Add the required keys as they are in your local env.py (i.e IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME)
+
+12. Go to the app Overview page and when the build is finished, click 'Open App'
+
+  
+### To clone this project into Gitpod, you should follow these steps.
+
+  
+1. Open your Github account or create one.
+
+2. Use the Chrome browser.
+
+3. Install the extension for Gitpod.
+
+4. Log into your gitpod account.
+
+5. Navigate to the Project GitHub repository.
+
+6. Under the Repository Family_Favs, click download.
+
+7. This will trigger a new gitpod workspace that you can work on.
+
+## Acknowledgements
+
+  
+Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my third Milestone Project.
+
+Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.
+
+Thanks also to support from the Slack Community. 
+
+Thanks also to my husband and family for supporting me through this project and providing invaluable feedback.
+
+### End of README
+
+[Return to Table of Contents](#table-of-contents)
