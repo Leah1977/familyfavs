@@ -78,14 +78,12 @@ h3 {
     
     background: url("../images/cover.jpg");
     background-size: cover;
-    background-position: relative;
     padding-top: 0.4px;
     padding-bottom: 20px;
     height: 40vh;
     width: 100%;
     margin-top: 1px;
     margin-bottom: 30px;
-    color:rgba(0, 0, 0, 0);
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -178,8 +176,7 @@ h3 {
     font-family: 'Raleway', sans-serif;
     font-size: .8em;
     font-weight: 400;
-    text-shadow: 2;
-    color: mintcream;
+    color: white;
     width: auto;
 }
 
