@@ -79,7 +79,8 @@
     </main>
 
 <!-- footer content -->
-<footer class="bg-dark text-center text-white">
+<!-- credit to mdbootstap.com for footer layout (edited to suit needs)-->
+<footer class="bg-success text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
       <!-- Section: Social media -->
@@ -98,7 +99,7 @@
     </section>
         
     <!-- Section: Form -->
-    <section class="">
+    <section class="footer-details">
         <form class ="subscribe-form" method = "POST" action = "{{ url_for('subscribe') }}">
             <div class="row d-flex justify-content-center">
                 <div class="col-auto">
@@ -133,6 +134,7 @@
       © 2021 Copyright: Leah Holmes
     </div>
   </footer>
+  <!-- end credit -->
   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

@@ -266,8 +266,9 @@ h3 {
 
 
 /* ------------------------------------------------------ footer */
-.page-footer {
-    background-color: #43A047;
+
+label {
+    color: white;
 }
 
 .social-links li a i{
