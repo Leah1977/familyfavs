@@ -218,7 +218,7 @@ def subscribe():
     if request.method == "POST":
         # check if email already exists
         existing_email = mongo.db.subscribers.find_one(
-            {"email": request.form.get("email").lower()})
+            {"email": request.form.get("email")})
 
         # if existing email
         if existing_email:
