@@ -104,14 +104,13 @@ def profile(username):
     if session["user"]:
         # get the session username from the database
         if session["user"] == "admin":
-            recipe = mongo.db.recipe.find()
+            recipe = mongo.db.recipes.find()
         else:
             # get users recipes from the database
-            recipe = mongo.db.recipe.find(
-                {"username": session["user"]})["username"]
+            recipe = mongo.db.recipes.find({"username": username})
         return render_template(
-            "profile.html", recipe=recipe, username=username)
-    return redirect(url_for("login"))
+            "profile.html", recipes=recipe, username=username)
+    return redirect(url_for("login.html"))
 
 
 @app.route("/logout")
