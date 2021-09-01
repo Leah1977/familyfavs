@@ -79,52 +79,64 @@
     </main>
 
 <!-- footer content -->
-    <footer class="page-footer">
-        <!-- subscibe to newsletter -->
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h5 class="white-text">For Educational Purposes Only</h5>
-                    <p class="grey-text text-lighten-4">Subscribe for all the latest foodie updates.</p>
-                    <div class="input-field col s6">
-                        <form class="col s12" method = "POST" action = "{{ url_for('subscribe') }}">
-                            <i class="fas fa-user-plus prefix light-green-text text-darken-4"></i>
-                            <input id="email" name="email" type="text" class="validate" required>
-                            <label for="email">Email Name</label>
-                            <br>
-                            <button type = "submit" class = "col s8 subscribe-btn">Subscribe</button>
-                        </form>
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://facebook.com" rel="noopener" role="button"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://twitter.com" rel="noopener" role="button"><i class="fab fa-twitter" aria-hidden="true"></i>></a>
+  
+        <!-- LinkedIn -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://linkedin.com" rel="noopener" role="button"><i class="fab fa-google" aria-hidden="true"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://instagram.com" rel="noopener" role="button"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    </section>
+        
+    <!-- Section: Form -->
+    <section class="">
+        <form class ="" method = "POST" action = "{{ url_for('subscribe') }}">
+            <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                    <p class="pt-2">
+                    <strong>Sign up for our newsletter</strong>
+                    </p>
+                </div>
+              
+                <div class="col-md-5 col-12">
+                <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" class="form-control"/>
+                        <label class="form-label" for="form5Example2">Email address</label>
                     </div>
                 </div>
-            <!-- social links -->
-            <div class="col s12">
-                <h5 class="white-text social-links-title">Social Links</h5>
-                   <ul class="social-links">
-                        <li><a class="grey-text text-lighten-3 left" target="_blank" href="https://facebook.com" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span></a></li>
-                        <li><a class="grey-text text-lighten-4 left" target="_blank" href="https://twitter.com" rel="noopener">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span></a>
-                        </li>
-                        <li><a class="grey-text text-lighten-4 left" target="_blank" href="https://instagram.com" rel="noopener">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span></a>
-                        </li>
-                        <li><a class="grey-text text-lighten-4 left" target="_blank" href="https://linkedin.com" rel="noopener">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">linkedin</span></a>
-                        </li>     
-                    </ul>
+              
+                <div class="col-auto">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container center-align">
-                © 2021 Copyright Leah Holmes             
-            </div>
-        </div>
-    </footer>
-    
+        </form>
+    </section>
+    <!-- Section: Text -->
+    <section class="mb-4">
+        <p>
+            Subscribe for all the latest foodie updates.
+            For Educational Purposes only.
+        </p>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright: Leah Holmes
+    </div>
+  </footer>
+  <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
