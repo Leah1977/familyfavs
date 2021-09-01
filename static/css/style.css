@@ -46,8 +46,12 @@ body {
 /* ------------------------------------------------------ heading */
 
 nav .brand-logo {
-        font-size: 4.1rem;
+        font-size: 3.5rem;
 } 
+
+a:hover {
+    color: yellow;
+}
 
 .title {
     font-family: Lobster, sans-serif;
@@ -127,7 +131,7 @@ h3 {
 
 .hero-btn {
     text-decoration: none;
-    color: pink;
+    color: yellow;
     background: green;
     border-radius: 10px;
     margin-right: 80px;
@@ -136,7 +140,7 @@ h3 {
 }
 
 .hero-image .hero-btn:hover {
-    background: pink;
+    background: yellow;
     color: green;
 }
 
