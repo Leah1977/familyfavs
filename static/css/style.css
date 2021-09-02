@@ -9,7 +9,7 @@
 }
 
 .flashes h4 {
-    line-height: 2;
+    line-height: 2px;
 }
 
 .btn-small {
@@ -20,12 +20,6 @@
     margin: 6px;
     line-height: 42px;
 }
-
-
-main {
-    flex: 1 0 auto;
-  }
-
 
 body {
     margin: 0;
@@ -60,7 +54,7 @@ nav .brand-logo {
 } 
 
 a:hover {
-    color: yellow;
+    color: #d4d700;
 }
 
 .title {
@@ -139,7 +133,7 @@ h3 {
 
 .hero-btn {
     text-decoration: none;
-    color: yellow;
+    color: #d4d700;
     background: #2B9348;
     border-radius: 10px;
     margin-right: 80px;
@@ -148,7 +142,7 @@ h3 {
 }
 
 .hero-image .hero-btn:hover {
-    background: yellow;
+    background: #d4d700;
     color: #2B9348;;
 }
 
@@ -168,7 +162,7 @@ h3 {
 .password-input {
     margin-top: 1rem;
     width: 90%;
-    padding: .25rem, .75rem;
+    padding: .25rem .75rem;
     border-radius: .3rem;
     text-align: left;
     color: white;
@@ -176,7 +170,7 @@ h3 {
 .strength-meter {
     height: 2rem;
     width: 40%;
-    border: 3px solid yellow;
+    border: 3px solid #d4d700;
     border-radius: 1rem;
     margin: 0 auto;
     overflow: hidden;
@@ -366,7 +360,7 @@ h3 {
 /* ------------------------------------------------------ footer */
 
 label {
-    color: white;
+    color: #fafafa;
 }
 
 
@@ -461,7 +455,7 @@ h3 {
 .search-icon {
     width: 1rem;
     font-size: large;
-    color: white;
+    color: #fafafa;
 }
 
 }
