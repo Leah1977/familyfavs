@@ -304,10 +304,10 @@ With these user stories in mind, I put together some wireframes.  I�
 
 ## Color Scheme
 
-### I will use the colours in the main body, header and footer
+### I will use the colours in the main body, header and footer
 
 
-![Color Scheme](/colours.png)
+![Color Scheme](static/images/readme_images/colours.png)
 
 My primary colours will be green and yellow.  I will use variations of this colour to add designs that stand out and appeal to the user.
 
@@ -318,21 +318,21 @@ I used [Coolers](http://www.coolers.co) to generate my colours for the p
 ### I will use the following fonts throughout the website for consistency in style.
 
 
-* Eczar
+* Raleway
 
-![Eczar Font](eczar.png)
+![Raleway Font](static/images/readme_images/RalewayFont.png)
 
-* Rubik
+The Raleway font is used for main headings and paragraphs throughout the project.
 
-  
+* Lobster  
 
-![Rubik Font](png)
+![static/images/readme_images/lobsterFont.png](png)
 
-I chose this for the main app title.
+I chose this font for the main app title.
 
-![App Title](.png)
+I also used this for some main headings throughout the site.
 
-* Sans Serif as a back up
+* Sans Serif will be used as a back up.
 
 ## Additional Features
 
@@ -344,7 +344,7 @@ This project is responsive to appear on different screen sizes.
 
 The display changes to accommodate smaller screen sizes. 
 
-This project is specifically designed to engage with the user. We are encouraging the user to interact with recipe app.
+This project is specifically designed to engage with the user. We are encouraging the user to interact with the recipe app.
 
 This project will have specific responses depending on the users’ decisions and engagement.
 
@@ -395,47 +395,44 @@ Code used throughout this project was learned and implemented from the
 
 ### Images
 
-  
-
 Images for this app were located in the clipart-library
-
-  
 
 [Card Images](http://clipart-library.com/lime.html)
 
-  http://clipart-library.com/clip-art/50-504289_broken-egg-png-clip-art-egg-clipart-transparent.htm
+http://clipart-library.com/clip-art/50-504289_broken-egg-png-clip-art-egg-clipart-transparent.htm
 
 http://clipart-library.com/images_k/eggs-transparent-background/eggs-transparent-background-5.jpg
   
 
-Lemon and Lime Logo/Card Picture made with [Canva](www.canva.com)
+Food Logo image was created with [Canva](www.canva.com)
 
   
+[Logo](static/images/familyfavslogo.png)
 
-logo.png
+This is used in the header across the website pages.
 
-Cover photo
+* Cover photo
 
 Photo by [Brooke Lark](https://unsplash.com/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/cookbook?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-  
-pasta salad
+
+* Pasta salad
 Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pasta-salad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
- chicken curry
+* Chicken curry
   Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/chicken-curry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
  
   
- chocolate cake
+ * Chocolate cake
  Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/chocolate-cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
  
- Beef Stew
+ * Beef Stew
  Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/beef-stew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
  
- Meringue Roulade
+ * Meringue Roulade
  https://images.unsplash.com/photo-1505976378723-9726b54e9bb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80
 
- Spaghetti Bolognese
+ * Spaghetti Bolognese
  https://unsplash.com/photos/sA3wymYqyaI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
  
 ## Further References

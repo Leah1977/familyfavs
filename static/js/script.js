@@ -3,15 +3,13 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('select').formSelect();
   
+    const deleteRecipe = document.getElementById('#delete-recipe-modal')
+    const deleteBtn = document.getElementById('myInput')
+    
+    deleteRecipe.addEventListener('shown.mdb.modal', () => {
+      deleteBtn.focus()
+    })
 
-const modal = document.getElementById('delete-recipe-modal')
-const modalBtn = document.getElementsByClass('modal-btn')
-
-modalBtn.addEventListener('click', openModal);
-
-function openModal(){
-    modal.style.display="block";
-}
  
   // credit for code - Code Institute mini project
 
