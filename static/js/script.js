@@ -4,9 +4,9 @@ $(document).ready(function(){
     $('select').formSelect();
   
     const deleteRecipe = document.getElementById('#delete-recipe-modal')
-    const deleteBtn = document.getElementById('myInput')
+    const deleteBtn = document.getElementById('modal')
     
-    deleteRecipe.addEventListener('shown.mdb.modal', () => {
+    deleteRecipe.addEventListener('click', () => {
       deleteBtn.focus()
     })
 

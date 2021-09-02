@@ -72,14 +72,6 @@ Tested the site for mobile-friendly usage
 Tested all links on all pages. All links work as intended. This allows the user to move from one page to another with ease.
 
 
-**Expected**
-
-When you click on the options drop-down menu item, it is expected to drop down with a list of items that you can click on.
-* The first link returns you to the game.
-* The second link leads to a modal that instructs you on how to play the game.
-* The third option is to bring you to a form to sign up for further information.
-
-
 **Testing**
 
 I clicked on the drop-down menu.
@@ -88,19 +80,19 @@ I clicked on each option.
 **Result**
 
 When you click on  Home, you are returned to the home page.
-When you click on How to Play, a modal pops up with instructions on How To Play.
-When you click on Sign up, you are redirected to a sign-up page.
+When you click on Register, you are redirected to the registration page.
+When you click on Log In, you are redirected to a Log In page.
 
 **Expected**
 The links work as expected.
 
-Tested the overlay
+
 
 **Expected**
 
 Tested the social contact links in the footer
 
-Tested the social contact links on all pages. When you click on a social link, the link should change colour when you hover over it and, when clicked, will redirect you to the relevant page in a new window.
+Tested the social contact links on all pages. When you click on a social link, the button will redirect you to the relevant page in a new window.
 
 **Expected**
 
@@ -112,48 +104,41 @@ Tested the social link on each page by clicking on the social links.
 
 **Result**
 
-The site acted as expected, and the link changed colour when you hover over it and redirects you to a new page when you click on it.
+The site acted as expected, and the link redirects you to a new page when you click on it.
 
 **Fix**
 
 No fix required.
 
-### Overlay
-
-When you click on the overlay, it will hide from view.  
-Allowing you to start the game.
 
 ### Tested the modal
 
-Tested the modal on the home page. 
+
 
 **Expected**
 
-A modal will pop up on the home page.
+
 
 **Testing**
 
-The modal pops up with an option to click on play game or close modal.
 
 **Result**
 
-Links work as expected.
+
 
 **Fix**
 
-No fix required.
+
 
 ### Sign-up Form
 
 Tested the form. Entered in details to each relevant section.
 I checked the submit button by clicking on it.
-Click on the Home Button to return to the game.
+
 
 **Expected**
 
-When you enter your details, they are displayed as entered.
-When you click on the submit button, the form is submitted - this site is static.
-When you click on the Home button, you are returned to the game.
+
 
 **Testing**
 
@@ -161,14 +146,14 @@ Tested the form by filling out details for all sections.
 
 **Result**
 
-If you enter the email address in incorrect format, a pop up appears to prompt you to fill out your details.
+
 
 Testing across various devices
 
 - Ensured the website was responsive on all pages through [Google Mobile Friendly](https://search.google.com/test/mobile-friendly)
 
 - Ensured the website was responsive on different mobiles using [BrowserStack](https://www.browserstack.com/)
-![Testing on a mobile device](assets/images/readmeimages/mobiletesting.png)
+![Testing on a mobile device](.png)
 
 - Testing was also performed on Safari and Chrome
 
@@ -191,7 +176,7 @@ User is able to navigate from page to page by clicking on links and buttons.
 
 User can search for items on the home page by entering the item in the search bar.
 
-[Search Item](static/images/testing_images/search.png)
+![Search Item](static/images/testing_images/search.png)
 
 3. I would expect the app to be visually appealing.
 
@@ -205,10 +190,51 @@ Users can add their own recipes, once they have registered and logged in.
 
 ### User Story 2
 
+  As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
 
+### What I expect to find on a web application?
 
+  
 
+1. Can I view all recipes?
 
+2. Can I create my own recipes?
+
+3. Can I edit or delete my own recipes?
+
+  
+
+### User Story 3
+
+### Would this game be suitable for younger family members?
+
+  
+
+1. Is the website suitable for all family members?
+
+2. Is it easy to navigate?
+
+3. What age is the app intended for?
+
+  
+
+As a user, I would like to be able to add my own recipes and notes for viewing.
+  
+### User Story 4
+
+### Would this app be suitable for sharing recipes?
+
+  
+
+1. Is the app easy to navigate?
+
+2. Are there educational advantages to this app?
+
+  
+
+As a user, I would like to play to share my recipes with all family members and friends.
+
+## Debugging
 
 ## End of Testing Section
 
