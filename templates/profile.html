@@ -22,26 +22,23 @@
     
     <div class="row">
         {% for recipe in recipes %}
-            <div class="col s12 m6 l3">
-                
-                <div class="card light-green center-align">
-                    <div class="card-image">
-                    <img src="{{ url_for('get_recipes', recipe_id=recipe._id) }}">
-                    <span class="card-title">{{ recipe.recipe_name }}</span>
-                    </div>
-                    <div class="card-content white-text">
-                    <p>Look through our {{ recipe.category_name }}</p>
-                    </div>
-                    {% if session.user|lower == recipe.created_by|lower %}
-                        <div class="card-action">
-                            <a href="{{ url_for('get_recipes')}}">Return to Home Page</a>
-                            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn green accent-4">Edit</a>
-                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn red accent-4">Delete</a>
+            {% if session.user|lower == recipe.created_by|lower %}
+                <div class="col s12 m6 l3">
+                    <div class="card light-green center-align">
+                        <div class="card-image">
+                            <img src="{{recipe.recipe_img_url }}" alt="{{recipe.recipe_name}}" class="recipe-image"/>
+                            <span class="card-title">{{ recipe.recipe_name }}</span>
+                            <div class="card-content white-text">
+                                <p>Look through our {{ recipe.category_name }}</p>
+                                <a href="{{ url_for('get_recipes')}}">Return to Home Page</a>
+                                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn green accent-4">Edit</a>
+                                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn red accent-4">Delete</a>
+                            </div>
                         </div>
-                    {% endif %}
+                    </div>
                 </div>
-            </div>
+            {% endif %}
         {% endfor %}
-    </div>
+    </div>                  
 
 {% endblock %}

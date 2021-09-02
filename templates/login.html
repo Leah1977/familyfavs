@@ -4,7 +4,7 @@
     <h3 class="center-align">Log In</h3>
 
     <div class="row">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
+        <form class="col s12 m8" method="POST" action="{{ url_for('login') }}">
             <div class="card-panel">
                 <!-- Username -->
                 <div class="row">
@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-user-cog prefix light-green-text text-darken-4"></i>
-                        <input id="password" name="password" type="password" minlength ="8" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                        <input id="password" name="password" type="password" minlength ="8" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" aria-labelledby="confirm password" placeholder="password" required>
                         <label for="password">Password</label>
                     </div>
                 </div>
@@ -26,13 +26,13 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-user-lock prefix light-green-text text-darken-4"></i>
-                        <input id="confirm_password" name="confirm_password" type="password" class="validate">
+                        <input id="confirm_password" name="confirm_password" type="password" class="validate" aria-labelledby="confirm password" placeholder="confirm password" required>
                         <label for="password">Confirm Password</label>
                     </div>
                 </div>
                 <!-- Login -->
                 <div class="row">
-                    <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
+                    <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow btn-login">
                         Log In <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>

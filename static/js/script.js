@@ -3,6 +3,15 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('select').formSelect();
   
+
+const modal = document.getElementById('delete-recipe-modal')
+const modalBtn = document.getElementsByClass('modal-btn')
+
+modalBtn.addEventListener('click', openModal);
+
+function openModal(){
+    modal.style.display="block";
+}
  
   // credit for code - Code Institute mini project
 
@@ -37,62 +46,5 @@ $(document).ready(function(){
 
 // end credit
 
-const checkPasswordMatch = () => {
-let password = document.getElementById('password');
-let confirmPassword = document.getElementById('confirm_password');
-let btnRegister = document.querySelector('.btn-register');
-let btnLogin = document.querySelector('btn-login');
-let strengthMeter = document.getElementById('strength-meter');
 
-passwordInput.addEventListener('input', updateStrengthMeter)
-updateStrengthMeter()
-
-function updateStrengthMeter() {
-    let weakPassword = calculatePasswordStrength
-    (passwordInput.value)
-
-    let strength = 100
-    weakPassword.forEach(weakPassword => {
-        if (weakPassword == null) return
-        strength -= weakPassword.deduction
-    })
-        strengthMeter.style.setProperty('--strength', strength)
-    }
-
-    function calculatePasswordStrength(password){
-        let weakPasswords = []
-        weakPassword.push(lengthWeakPassword(password))
-        return weakPassword
-    }
-
-    function lengthWeakPassword(password) {
-        let length = password.length
-
-        if(length <= 6) {
-            return { 
-                message: 'Your password is too short',
-                deduction: 40
-            }
-        }
-
-        if (length <= 10) {
-            return { 
-                message: 'Your password could be longer',
-                deduction: 15
-            }
-        }
-
-        if (length <= 10) {
-            return { 
-                message: 'Your password could be longer',
-                deduction: 15
-            }
-        }
-
-    }
-    if (password.value !== confirmPassword.value) {
-        
-    }
-
-}
 
