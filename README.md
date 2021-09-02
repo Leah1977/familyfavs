@@ -93,7 +93,7 @@ The home page is made up of the title “Family Favs”.
 
 There is a drop-down, select menu to the right, which expands to show a list of options
 
-![dropdown menu option](.png)
+![dropdown menu option](static/images/readme_images/dropdown_menu.png)
 
 There is a footer on the home page.  This displays social links and a sign up to our newsletter option.  
 
@@ -266,7 +266,12 @@ With these user stories in mind, I put together some wireframes.  I�
 
 ### Essentials will include
 
-  
+* Create Categories function
+
+* Edit Categories function
+
+* Delete Categories function
+ 
 
 * Create Recipe function
 
