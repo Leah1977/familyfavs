@@ -101,18 +101,20 @@ There is a footer on the home page.  This displays social links and a sign up to
 
 There is a registration form where users can fill out their information, to allow them to login and create, read, update or delete recipes. 
 
-![Registration Form](assets/images/.png)
+![Registration Form](static/images/readme_images/register_form.png)
 
   
 ## Log In Form.
 
 There will be a log in Form where registered users can fill in their user name and password to access further options to create, read, update or delete recipes.  
 
+![Log In Form](static/images/readme_images/login_form.png)
+
 ## Sign up Form
 
 This page will allow the player to sign up for further information on updates for our web application.
 
-![Sign Up](assets/images//signup.png)
+![Sign Up](static/images/readme_images/footer.png)
 
 The sign-up form is to register with our site to be notifie of updates.
 
@@ -331,7 +333,7 @@ The Raleway font is used for main headings and paragraphs throughout the project
 
 * Lobster  
 
-![static/images/readme_images/lobsterFont.png](png)
+![Lobster Font](static/images/readme_images/lobsterFont.png)
 
 I chose this font for the main app title.
 
