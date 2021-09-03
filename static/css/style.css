@@ -9,7 +9,11 @@
 }
 
 .flashes h4 {
-    line-height: 20px;
+    line-height: 30px;
+    font-family: "Lobster", sans-serif;
+    font-size: large;
+    color: #000;
+
 }
 
 .btn-small {

@@ -1,54 +1,45 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-- recipe title -->
-<div class="row">
-    <div class="col s12">
-        <h3 class="light-green-text text-darken-4 center-align recipe-title">{{recipe.recipe_name}}</h3>
-    </div>
-</div>
-
-<!-- full recipe description -->
-
-<div class="container">
+<div class="container full-recipe-container">
+    <!-- recipe title -->
     <div class="row">
-        <div class="col s4">
+        <div class="col s12">
+            <h3 class="light-green-text text-darken-4 center-align recipe-title">{{recipe.recipe_name}}</h3>
+        </div>
+    </div>
+
+    <!-- full recipe description -->
+
+    <div class="row">
+        <div class="col s12">
             <img src= "{{ recipe.recipe_img_url }}" class="full-recipe-image" alt="full recipe image">
         </div>
-        <div class="col s8">
-            <h5>Category: {{recipe.category}}</h5>
-            <h5>Created_by: {{recipe.created_by}}</h5>
-            <h5>Prep Time: {{recipe.prep_time}}</h5>
-            <h5>Serves: {{recipe.serves}}</h5>
+        <div class="row">
+            <div class="col s12">
+                <h5>Category: {{recipe.category}}</h5>
+                <h5>Created By: {{recipe.created_by}}</h5>
+                <h5>Prep Time: {{recipe.prep_time}}</h5>
+                <h5>Serves: {{recipe.serves}}</h5>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="col s12">
             <h4>Ingredients</h4>
             <hr>
-            <ul>
-                {% for ingredient in recipe.ingredients %}
-                    <p>{{ingredient}}</p>
-                {% endfor %}
-            </ul>
+            <p>{{ recipe.ingredients }}</p>
         </div>
-    </div>
-
-    <div class="row">
         <div class="col s12">
             <h4>Method</h4>
-            <hr>
-            <ul>
-                {% for method in recipe.method %}
-                    <p>{{method}}</p>
-                {% endfor %}
-            </ul>
+            <p>{{ recipe.method }}</p>
         </div>
     </div>
+      
     <div class="card-action">
         <a href="{{ url_for('get_recipes') }}">Return to homepage</a>
         <a href="{{recipe.recipe_url}}" target="_blank">See orignal recipe</a>
-      </div>
+    </div>
 </div>
 
 {% endblock %}
