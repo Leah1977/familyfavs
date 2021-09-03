@@ -35,11 +35,11 @@
                     {% for recipe in recipes %}
                         <div class="card-body recipe-main-item">
                             {% if recipe.recipe_img_url %}
-                                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id) }}">
-                                <img class ="card-img-top" src="{{recipe.recipe_img_url}}" alt="{{recipe.recipe_name}}"/>
+                                <a href = "{{ url_for('get_recipes', recipe_id=recipe._id) }}">
+                                <img class ="card-img-top" src="{{ recipe.recipe_img_url }}" alt="{{ recipe.recipe_name }}"/>
                                 </a>
                                 {% else %}
-                                <a href = "{{ url_for('get_recipes', recipe_id=recipe_id)}}">
+                                <a href = "{{ url_for('get_recipes', recipe_id=recipe._id)}}">
                                 <img class ="card-img-top" src="static/images/no_img_available.jpg" alt="No recipe available"/>
                                 </a>
                             {% endif %}
