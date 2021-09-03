@@ -44,7 +44,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-green-text text-darken-4"></i>
-                <input id="ingredients" name="ingredients" minlength ="5" maxlength="50" value="{{- recipe.ingredients -}}" type="text" class="materialize-textarea validate required">
+                <textarea id="ingredients" name="ingredients" minlength ="5" maxlength="500" value="{{- recipe.ingredients -}}" class="materialize-textarea validate required"></textarea>
                 <label for="ingredients">Ingredients:</label>
                 <span data-error="wrong" data-success="right">Please put each ingredient on a new line</span>
                 </span>
