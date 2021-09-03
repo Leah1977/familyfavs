@@ -45,7 +45,6 @@ body {
 hr {
     width: 100px;
     border: 5px solid black;
-
 }
 
 
@@ -244,8 +243,7 @@ h3 {
 }
 
 .recipe-card img {
-    height: 400px;
-    width: 600px;
+    height: 200px;
     border: 4px solid #2B9348;;
     
 }
