@@ -126,7 +126,7 @@ The sign-up form is to register with our site to be notifie of update
 
 ### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
  
-### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/Wireframes.pdf)
+### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/familyfavs_wireframes.pdf)
 
 
 ## Project Goals.
@@ -384,7 +384,7 @@ In this project, I used the following to help build my website.
 
 * [html](www.html.com)
 
-* [css] (www.css.co)
+* [css](www.css.co)
 
 * [JavaScript](www.javascript.com)
 
