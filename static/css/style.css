@@ -225,6 +225,20 @@ h3 {
 
 
 
+/* ------------------------------------------------------ recipe image */
+
+
+.card-title {
+    color: white;
+    background-color: seagreen;
+    border: 3px solid black;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px 10px 20px;
+    border-radius: 50px;
+    padding: 20px;
+}
 /* ------------------------------------------------------ recipe card */
 
 .recipe-card {
