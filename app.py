@@ -107,9 +107,13 @@ def profile(username):
             recipe = mongo.db.recipes.find()
         else:
             # get users recipes from the database
-            recipe = mongo.db.recipes.find({"username": username})
+            username = mongo.db.users.find_one(
+                {"username": session["user"]})["username"]
+            user = session.get("user").lower()
+            user_recipes = list(
+                mongo.db.recipes.find({"created_by": session["user"]})          )
         return render_template(
-            "profile.html", recipes=recipe, username=username)
+            "profile.html", recipes=user_recipes, username=username)
     return redirect(url_for("login.html"))
 
 
