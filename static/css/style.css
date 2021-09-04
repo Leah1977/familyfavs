@@ -48,6 +48,16 @@ hr {
     border: 5px solid black;
 }
 
+a {
+    color: black;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: #2B9348;
+    text-transform: capitalize;
+}
+
 
 /* ------------------------------------------------------ logo */
 
@@ -62,10 +72,6 @@ hr {
 nav .brand-logo {
         font-size: 3.5rem;
 } 
-
-a:hover {
-    color: #d4d700;
-}
 
 .title {
     font-family: "Lobster", sans-serif;
@@ -222,8 +228,18 @@ h3 {
 
 /* ------------------------------------------------------ categories card */
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #000;
+    margin-right: 24px;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
-
+.card-action a: hover {
+    color: #fafafa;
+}
 
 
 /* ------------------------------------------------------ recipe image */
