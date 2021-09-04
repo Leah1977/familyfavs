@@ -239,9 +239,13 @@ I have also used werkzeug.security for hashing passwords to enhance security.
 
 All users can view all recipes on the home page.
 
+![All Recipes](static/images/all_recipes.png)
+
 2. Can I create my own recipes?
 
 You can create your own recipes.  Log in once you have registered and click on the create recipe page.
+
+![Create Recipe Form](static/images/create_recipe_user.png)
 
 Fill out the form and add a link to the original recipe and an image if you wish.
 
@@ -251,6 +255,8 @@ Click on create recipe and your recipe will be added to the database.
 
 If you wish to edit a recipe a any stage you can do so by going into your profile page and 
 selecting the recipe you wish to edit.
+
+![Edit Recipe](static/images/testing_images/edit_recipe_user.png)
 
 Once you click edit your recipe will be saved.
 
