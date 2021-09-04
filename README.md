@@ -6,9 +6,9 @@
 
 A Data-Centric Development Project for Milestone 3.
   
-The project is a web applications based on the creation of a recipe book.  It allows users to Create, Read, Update and Delete Recipes.
+The project is a web application based on the creation of a recipe book.  It allows users to Create, Read, Update and Delete Recipes.
 
-## Table of Contents.
+## Table of Contents.
 
 1. [Introduction](#introduction)
 
@@ -50,7 +50,7 @@ I have created a mobile-first project.
 
 # Family Favs
 
-This is a data-centric web application.  I created this app to allow friends and family to grow and share family favourite recipes.  Each user can register and log in to add new recipes, edit old recipes, read others recipes and delete recipes they no longer wish to share.
+A data-centric web application.  I created this app to allow friends and family to grow and share favourite family recipes.  Each user can register and log in to add new recipes, edit old recipes, read others recipes and delete recipes they no longer wish to share.
 
 There is also an admin user.  The admin user will have the permission required to create a new category.
   
@@ -60,129 +60,129 @@ This app encourages friends and family connectivity through a love of cooking.
 
 It provides a valuable resource for children to learn and create family recipes.
 
-### What value does it provide to the site owner.
+### What value does it provide to the site owner.
 
 This web application will provide the site owner with a valuable database of recipes to share with other family and friends.
 
-The app can be enjoyed by all aspiring family cooks.
+All aspiring family cooks can enjoy the app.
 
-### Here is a demonstrating of how my web app looks on different screen sizes using [Am I Responsive Website](http://ami.responsivedesign.is/)
+### Here is a demonstrating of how my web app looks on different screen sizes using [Am I Responsive Website](http://ami.responsivedesign.is/)
 
  
-![Am I responsive](static/images/amiresponsive.png)
+![Am I responsive](static/images/amiresponsive.png)
 
-The app will resize according to the different screen sizes.
+The app will resize according to the different screen sizes.
 
 ---
 
-#### This project will include four separate pages. 
+#### This project will include four separate pages. 
 
-* Home page.
+* Home page.
 
 * Registration Form
 
-* Sign in Form
+* Sign-in Form
 
 * Recipe page
 
-* 404 page, which has a link back to the home page without using browser navigation.
+* 404 page, which has a link back to the home page without using browser navigation.
 
-## Home page
+## Home page
 
-The home page is made up of the title “Family Favs”.
+The home page is made up of the title "Family Favs".
 
-There is a drop-down, select menu to the right, which expands to show a list of options
+There is a drop-down, select menu to the right, which expands to show a list of options.
 
-![dropdown menu option](static/images/readme_images/dropdown_menu.png)
+![dropdown menu option](static/images/readme_images/dropdown_menu.png)
 
-There is a footer on the home page.  This displays social links and a sign up to our newsletter option.  
+There is a footer on the home page.  Social links and a sign up to our newsletter option are included in the footer.  
 
-## Registration Form
+## Registration Form
 
-There is a registration form where users can fill out their information, to allow them to login and create, read, update or delete recipes. 
+There is a registration form where users can fill out their information to log in and create, read, update or delete recipes. 
 
 ![Registration Form](static/images/readme_images/register_form.png)
 
   
-## Log In Form.
+## Log In Form.
 
-There will be a log in Form where registered users can fill in their user name and password to access further options to create, read, update or delete recipes.  
+There will be a login form where registered users can fill in their user name and password to access further options to create, read, update or delete recipes.  
 
 ![Log In Form](static/images/readme_images/login_form.png)
 
-## Sign up Form
+## Sign up Form
 
-This page will allow the player to sign up for further information on updates for our web application.
+This page will allow the player to sign up for further information on updates for our web application.
 
-![Sign Up](static/images/readme_images/footer.png)
+![Sign Up](static/images/readme_images/footer.png)
 
-The sign-up form is to register with our site to be notifie of updates.
+The sign-up form is to register with our site to be notified of updates.
 
 
 # UX
 
 ## Skeleton:
 
-### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
+### I have used Balsamique to draw up 3-page wireframes for Mobile, iPad and Desktop.
  
-### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/familyfavs_wireframes.pdf)
+### Click here for a link to the Wireframes [Balsamique FamilyFavs](static/images/familyfavs_wireframes.pdf)
 
 
-## Project Goals.
+## Project Goals.
 
   
-### This project provides an back-end user centric web application.  It is intended to provide a space where family and friends can share recipes.
+### This project provides a back-end user-centric web application.  It is intended to provide a space where family and friends can share recipes.
 
 
-* To allow the user to create their own recipes.
+* To allow the user to create their recipes.
 
-* To allow the user to edit previously added recipes.
+* To allow the user to edit previously added recipes.
 
-* To allow the user to delete previously added recipes.
+* To allow the user to delete previously added recipes.
 
 ## Strategy
 
-### This website is for users looking to create and share recipes.
+### This website is for users looking to create and share recipes.
 
-* I want to provide an application for users to search for recipes and add their own.
+* I want to provide an application for users to search for recipes and add their own.
 
-* I want the site to be intuitive.
+* I want the site to be intuitive.
 
-* I want the user to navigate the site with ease.
+* I want the user to navigate the site with ease.
 
-## User Story 1
+## User Story 1
 
   
-### What I expect to find on a recipe app?
+### What do I expect to find on a recipe app?
 
-1. I expect to be able to navigate around the app with ease.
+1. I expect to be able to navigate around the app with ease.
 
-2. I expect to be able to search for recipes.
+2. I expect to be able to search for recipes.
 
 3. I would expect the app to be visually appealing.
 
-5. I would like to be able to add my own recipes.
+5. I would like to be able to add my recipes.
 
 
-## User Story 2
+## User Story 2
 
-  As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
+  As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
 
-### What I expect to find on a web application?
+### What do I expect to find on a web application?
 
   
 
 1. Can I view all recipes?
 
-2. Can I create my own recipes?
+2. Can I create my recipes?
 
-3. Can I edit or delete my own recipes?
+3. Can I edit or delete my recipes?
 
   
 
-## User Story 3
+## User Story 3
 
-### Would this game be suitable for younger family members?
+### Would this game be suitable for younger family members?
 
   
 
@@ -190,82 +190,75 @@ The sign-up form is to register with our site to be notifie of update
 
 2. Is it easy to navigate?
 
-3. What age is the app intended for?
+3. What age is the app intended?
 
   
 
-As a user, I would like to be able to add my own recipes and notes for viewing.
+As a user, I would like to be able to add my recipes and notes for viewing.
   
-## User Story 4
+## User Story 4
 
-### Would this app be suitable for sharing recipes?
-
-  
-
-1. Is the app easy to navigate?
-
-2. Are there educational advantages to this app?
+### Would this app be suitable for sharing recipes?
 
   
+1. Is the app easy to navigate?
 
-As a user, I would like to play to share my recipes with all family members and friends.
+2. Are there educational advantages to this app?
 
 
+As a user, I would like to play to share my recipes with all family members and friends.
+ 
+
+As a first time user, I would expect
+
+•   A registration option.
+
+•   A login option.
+
+•   Good Graphics
+
+•   An example of recipes already available.
+
+•   A search option
   
 
-As a first time user I would expect
+As a returning user, I would expect 
 
-  
 
-•   A registration option.
+•   A login option to create a user profile. 
 
-•   A log in option.
+•   My profile page is to be private for my use.
 
-•   Good Graphics
-
-•   An example of recipes already available.
-
-•   A search option
-  
-
-As a returning user I would expect 
-
-  
-
-•   A log in option to create a user profile. 
-
-•   My profile page to be private for my use.
-
-•  Updated content.
+•  Updated content.
 
   
 
-As a designer I would expect
+As a designer, I would expect
 
   
 
-•   All buttons to be working
+•   All buttons to be working
 
-•   All links to be active
+•   All links to be active
 
-•   To be able to navigate through the site with ease
+•   To be able to navigate through the site with ease
 
-•   To have a 404 page to return users to the home page.
+•   To have a 404 page to return users to the home page.
 
-•   Striking colors to engage the user
+•   Striking colours to engage the user
 
-•   To be able to add or delete categories.
+•   To be able to add or delete categories.
   
 
-Ideas -  have a gallery to put up tried and tested recipes.
+Ideas -  have a gallery to put up tried and tested recipes.
 
   
 
-With these user stories in mind, I put together some wireframes.  I included all the primary requirements and issues that were raised from my user story research.
+With these user stories in mind, I put together some wireframes.  I included all the primary requirements and issues that were raised from my user story research.
 
 ## Scope
 
-### Essentials will include
+### Essentials will include
 
 * Create Categories function
 
@@ -280,26 +273,32 @@ With these user stories in mind, I put together some wireframes.  I�
 
 * Delete Recipe function
 
-## Features
+## Future Features
 
-#### This project will include four separate pages to be available to all users.
+* I would like to add a favourites section.
 
-* Home page
+* I would like to add an option for users to add recipes to their personal favourites.
+
+* I would like to add a blog section for users to add tried and tested recipes from the website.
+
+#### This project will include four separate pages to be available to all users.
+
+* Home page
 * Recipes page
 * Registration Form
-* Sign In Form
+* Sign In Form
 
-#### This project will include five separate pages to be available to all registered and loggin in users only.
+#### This project will include five separate pages available to all registered and logged in users only.
 
-* Home page
+* Home page
 * Profile page
 * Create Recipes page
 * Edit Recipes page
 * Log out option
 
-#### This project will include a further option for the admin user only.
+#### This project will include a further option for the admin user only.
 
-* Home page
+* Home page
 * Profile page
 * Manage Categories
 * Create Recipes page
@@ -308,80 +307,77 @@ With these user stories in mind, I put together some wireframes.  I�
 
   
 
-## Color Scheme
+## Color Scheme
 
-### I will use the colours in the main body, header and footer
+### I will use the colours in the main body, header and footer
 
 
-![Color Scheme](static/images/readme_images/colours.png)
+![Color Scheme](static/images/readme_images/colours.png)
 
-My primary colours will be green and yellow.  I will use variations of this colour to add designs that stand out and appeal to the user.
+My primary colours will be green and yellow.  I will use variations of this colour to add designs that stand out and appeal to the user.
 
-I used [Coolers](http://www.coolers.co) to generate my colours for the project. I then used variations within the project.
+I used [Coolers](http://www.coolers.co) to generate my colours for the project. I then used variations within the project.
 
 ## Typography
 
-### I will use the following fonts throughout the website for consistency in style.
+### I will use the following fonts throughout the website for consistency in style.
 
 
 * Raleway
 
 ![Raleway Font](static/images/readme_images/RalewayFont.png)
 
-The Raleway font is used for main headings and paragraphs throughout the project.
+The Raleway font is used for primary headings and paragraphs throughout the project.
 
 * Lobster  
 
 ![Lobster Font](static/images/readme_images/lobsterFont.png)
 
-I chose this font for the main app title.
+I chose this font for the main app title.
 
 I also used this for some main headings throughout the site.
 
-* Sans Serif will be used as a back up.
+* Sans Serif will be used as a backup.
 
-## Additional Features
+## Additional Features
 
   
 ## Project display
 
 
-This project is responsive to appear on different screen sizes.
+This project is responsive to appear on different screen sizes.
 
-The display changes to accommodate smaller screen sizes. 
+The display changes to accommodate smaller screen sizes. 
 
-This project is specifically designed to engage with the user. We are encouraging the user to interact with the recipe app.
+This project is specifically designed to engage with the user. We are encouraging the user to interact with the recipe app.
 
-This project will have specific responses depending on the users’ decisions and engagement.
+This project will have specific responses depending on the users' decisions and engagement.
 
-There will be the main navigation system and structured layout.
+There will be the primary navigation system and structured layout.
 
   
 ## Languages and Technologies
 
   
 
-* [HTML](http://wwww.html.com) Used for all four HTML pages as the main markup language for this project.
+* [HTML](http://wwww.html.com) Used for all four HTML pages as the primary markup language for this project.
 
-* [CSS](http://www.css-tricks.com) Used to style the content of my website.
+* [CSS](http://www.css-tricks.com) Used to style the content of my website.
 
 * [JavaScript](http://www.javascript.com).
 
-* [Python]()
+* [Python3](www.python.org)
 
-* [JQuery]()
+* [JQuery]
 
-* [Flask]()
+* [Flask]
 
-* []
-
-
-In this project, I used the following to help build my website.
+In this project, I used the following to help build my website.
   
 
-* [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css) for all the great icons.
+* [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css) for all the great icons.
 
-* [Google Fonts](https://fonts.googleapis.com/css2?)
+* [Google Fonts](https://fonts.googleapis.com/css2?)
 
 * [Balsamique](https://balsamiq.com/)
 
@@ -399,40 +395,38 @@ In this project, I used the following to help build my website.
 
 * [Heorku](https://dashboard.heroku.com/)
 
-* [Github]()
+* [Github](https://github.com/)
 
-* [Gitpod]()
+* [Gitpod](https://www.gitpod.io/)
 
-* [Pep8online]()
-
-* []
+* [Pep8online](http://pep8online.com/)
 
 
 ## Database
 
 * [MongoDB Atlas](https://cloud.mongodb.com/)
 
-I am using MongoDB Atlas for the Database.  MongoDB is a NoSQL cloud based database.
+I am using MongoDB Atlas for the Database.  MongoDB is a NoSQL cloud-based database.
 
 
 
 ---
-## In this project, I used the following to help build my website.
+## In this project, I used the following to help build my website.
 
   
 
-Code used throughout this project was learned and implemented from the [Code Institute Diploma Programme](https://codeinstitue.net)
+Code used throughout this project was learned and implemented from the [Code Institute Diploma Programme](https://codeinstitue.net)
   
 
-### [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/5.1.3.0/css/font-awesome.min.css) for its excellent choice of icons.
+### [Font Awesome](https://stackpath.bootstrapcdn.com/font-awesome/5.1.3.0/css/font-awesome.min.css) for its excellent choice of icons.
 
-### [Google Fonts](https://fonts.googleapis.com/css2?)
+### [Google Fonts](https://fonts.googleapis.com/css2?)
 
 ### Images/Media
 
-Images for this app were located in the clipart-library
+Images for this app were located in the clipart-library
 
-[Card Images](http://clipart-library.com/lime.html)
+[Card Images](http://clipart-library.com/lime.html)
 
 http://clipart-library.com/clip-art/50-504289_broken-egg-png-clip-art-egg-clipart-transparent.htm
 
@@ -473,33 +467,33 @@ Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=u
  * Strawberry Cheesecake
  https://images.unsplash.com/photo-1511996571461-5ea529c6d9d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RyYXdiZXJyeSUyMGNoZWVzZWNha2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
 
- * [BBCGoodFood](https://www.bbcgoodfood.com/).  Used for recipes displayed in the website.
+ * [BBCGoodFood](https://www.bbcgoodfood.com/).  Used for recipes displayed on the website.
 
-  BBC Food was used for all recipes.
+  BBC Good Food was used for all recipes.
  
 ## Further References
 
-- Confident Coding by Rob Percival
+- Confident Coding by Rob Percival
 
-- Confident Web design by Kenny Wood
+- Confident Web design by Kenny Wood
 
 - Patreon 
 
 - [YouTube](https://www.youtube.com/) 
 
-- [W3Schools](https://www.w3schools.com/) used for information to help in css styling
+- [W3Schools](https://www.w3schools.com/) used for information to help in css styling
 
 - [AmIResponsive](http://ami.responsivedesign.is/)
 
 ## Testing
 
-[Testing Section](TESTING.md)
+[Testing Section](TESTING.md)
 
 ## Deployment
   
-I used the programme [Gitpod](www.gitpod.io) in the development of this project.  I pushed it to GitHub using the CLI, which is built into Gitpod.
+I used the programme [Gitpod](www.gitpod.io) in the development of this project.  I pushed it to GitHub using the CLI, which is built into Gitpod.
   
-### To deploy this project to GitHub from its Gitpod repository - please follow these steps.
+### To deploy this project to GitHub from its Gitpod repository - please follow these steps.
 
   
 ## Deployment
@@ -526,51 +520,51 @@ This project was deployed to Heroku with the following steps:
 
 10. Go to the app settings on Heroku and click 'Reveal Config Vars'
 
-11. Add the required keys as they are in your local env.py (i.e IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME)
+11. Add the required keys as they are in your local env.py (i.e. IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME)
 
-Key	Value
-DEBUG	FALSE
-IP	0.0.0.0
-MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
-PORT	5000
-SECRET_KEY	<your_secret_key>
+Key Value
+DEBUG FALSE
+IP  0.0.0.0
+MONGO_URI mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+PORT  5000
+SECRET_KEY  <your_secret_key>
 
 
-12. Go to the app Overview page and when the build is finished, click 'Open App'
-
-  
-### To clone this project into Gitpod, you should follow these steps.
+12. Go to the app Overview page and when the build is finished, click 'Open App.'
 
   
-1. Open your Github account or create one.
+### To clone this project into Gitpod, you should follow these steps.
 
-2. Use the Chrome browser.
+  
+1. Open your Github account or create one.
 
-3. Install the extension for Gitpod.
+2. Use the Chrome browser.
 
-4. Log into your gitpod account.
+3. Install the extension for Gitpod.
 
-5. Navigate to the Project GitHub repository.
+4. Log into your gitpod account.
 
-6. Under the Repository Family_Favs, click download.
+5. Navigate to the Project GitHub repository.
 
-7. This will trigger a new gitpod workspace that you can work on.
+6. Under the Repository Family_Favs, click download.
+
+7. This will trigger a new gitpod workspace that you can work on.
 
 ### Acknowledgements
 
   
-Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my third Milestone Project.
+Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my third Milestone Project.
 
-Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.
+Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.
 
-Thanks also to support from the Slack Community. 
+Thanks also to support from the Slack Community. 
 
-Thanks also to my husband and family for supporting me through this project and providing invaluable feedback.
+Thanks also to my husband and family for supporting me through this project and providing invaluable feedback.
 
 # Disclaimer Note
 
 This project is for educational purposes only.
 
-### End of README
+### End of README
 
-[Return to Table of Contents](#table-of-contents)
+[Return to Table of Contents](#table-of-contents)

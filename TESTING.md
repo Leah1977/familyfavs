@@ -58,32 +58,32 @@ Comparing the deployed version against the development version(wireframes)
 * recipe profile page
 * main page 
 
-On the main page - I decided not to open the recipes in a separate page, but to include them on the home page.
+I decided not to open the recipes on a separate page on the main page but to include them on the home page.
 I thought this would look better visually.
 
 ![Home Page](static/images/testing_images/homepage.png)
 
-This then changed the layout of the nav bar slightly by removing the recipes link.
+This then changed the layout of the navbar slightly by removing the recipes link.
 
 ![NavBar](static/images/testing_images/navbar.png)
 
 * Registration
 
-I changed the layout of this slightly
+I changed the layout of this slightly.
 
-Instead of separate First Names and Second Names, I chose to let the user create a user name.
+Instead of separating First Names and Second Names, I let the user create a user name.
 
 ![Username](static/images/testing_images/username.png)
 
 I also omitted the email as it was not required to register.
 
-* Create Recipe
+* Create recipe
 
 For the create recipe section.
 
-I kept this layout similar, but omitte a difficulty level
+I kept this layout similar but omitted a difficulty level.
 
-I would like to add this as a further feature at a later stage.
+I want to add this as an additional feature at a later stage.
 
 ## Lighthouse
 
@@ -103,7 +103,7 @@ Tested the site for mobile-friendly usage
 
 ### Links
 
-Tested all links on all pages. All links work as intended. This allows the user to move from one page to another with ease.
+I have tested all links on all pages. All links work as intended. This allows the user to move from one page to another with ease.
 
 
 **Testing**
@@ -126,7 +126,7 @@ The links work as expected.
 
 Tested the social contact links in the footer
 
-Tested the social contact links on all pages. When you click on a social link, the button will redirect you to the relevant page in a new window.
+I have tested the social contact links on all pages. When you click on a social link, the button will redirect you to the relevant page in a new window.
 
 **Expected**
 
@@ -163,11 +163,11 @@ The site acted as expected, and the link redirects you to a new page when you cl
 ### Registration Form
 
 Tested the form. Entered in details to each relevant section.
-I checked that the validatiion was working by entering invalid data.
-The errors displayed as expected.
+I checked that the validation was working by entering invalid data.
+The errors were displayed as expected.
 
 I checked the registration button by clicking on it.
-A pop up message flashed up to confirm registration
+A pop-up message flashed up to confirm registration.
 
 ![Registration](static/images/testing_images/registration.png)
 
@@ -178,7 +178,7 @@ Tested the form by filling out details for all sections.
 
 **Result**
 
-Form worked as expected.
+The form worked as expected.
 
 ## Testing across various devices
 
@@ -188,14 +188,14 @@ Form worked as expected.
 
 ![Testing on a mobile device google pixel 4](static/images/testing_images/googlepixel.png)
 
-![Testing on a mobile device  huawaii p30](static/images/testing_images/huawaiip30.png)
+![Testing on a mobile device  Huawei p30](static/images/testing_images/huawaiip30.png)
 
 
 - Testing was also performed on Safari and Chrome
 
-Several family members also carried out-Testing on iphone 10 and SamsungA51
+Several family members also carried out-Testing on iPhone 10 and SamsungA51.
 
-Also devices tested well.
+Also, devices tested well.
 
 ## User Stories
 
@@ -203,37 +203,37 @@ Implement the user stories.
 
 ### User Story 1
 
-### What I expect to find on a recipe app?
+### What do I expect to find on a recipe app?
 
-1. I expect to be able to navigate around the app with ease.
+1. I expect to be able to navigate around the app with ease.
 
-User is able to navigate from page to page by clicking on links and buttons.
+The user can navigate from page to page by clicking on links and buttons.
 
-2. I expect to be able to search for recipes.
+2. I expect to be able to search for recipes.
 
-User can search for items on the home page by entering the item in the search bar.
+Users can search for items on the home page by entering the item in the search bar.
 
 ![Search Item](static/images/testing_images/search.png)
 
 3. I would expect the app to be visually appealing.
 
-I have used light colours, mainly green and yellow to give a fresh and appealing look to the website.
+I have used light colours, mainly green and yellow, to give the website a fresh and appealing look.
 
-5. I would like to be able to add my own recipes.
+5. I would like to be able to add my recipes.
 
-Users can add their own recipes, once they have registered and logged in.
+Users can add their recipes once they have registered and logged in.
 
-[Add Recipe](static/images/readme_images/create_recipe.png)
+![Add Recipe](static/images/readme_images/create_recipe.png)
 
 ### User Story 2
 
-  As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
+  As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
 
-I have used mongoDB to store all data.  
+I have used MongoDB to store all data.  
 
 I have also used werkzeug.security for hashing passwords to enhance security.
 
-### What I expect to find on a web application?
+### What do I expect to find on a web application?
 
 1. Can I view all recipes?
 
@@ -241,26 +241,24 @@ All users can view all recipes on the home page.
 
 ![All Recipes](static/images/all_recipes.png)
 
-2. Can I create my own recipes?
+2. Can I create my recipes?
 
-You can create your own recipes.  Log in once you have registered and click on the create recipe page.
+You can create your recipes.  Log in once you have registered and click on the create recipe page.
 
 ![Create Recipe Form](static/images/create_recipe_user.png)
 
 Fill out the form and add a link to the original recipe and an image if you wish.
 
-Click on create recipe and your recipe will be added to the database.
+Click on create recipe, and your recipe will be added to the database.
 
-3. Can I edit or delete my own recipes?
+3. Can I edit or delete my recipes?
 
-If you wish to edit a recipe a any stage you can do so by going into your profile page and 
-selecting the recipe you wish to edit.
+If you wish to edit a recipe at any stage, you can do so by going into your profile page and 
+selecting the recipe, you want to edit.
 
-![Edit Recipe](static/images/testing_images/edit_recipe_user.png)
+Once you click to edit your recipe, it will be saved.
 
-Once you click edit your recipe will be saved.
-
-A flash message will appear to tell you, you have successfully edited your recipe.
+A flash message will appear to tell you; you have successfully edited your recipe.
 
 You can also delete your recipe by clicking on the delete button on your profile page.
 
@@ -268,45 +266,50 @@ You can also delete your recipe by clicking on the delete button on your profile
 ### User Story 3
 
 
-### Would this website be suitable for younger family members?
+### Would this website be suitable for younger family members?
 
 This website is designed for the whole family to use.
 
-I would like this recipe to encourage families to share recipes with eachother.
+I want this recipe to encourage families to share recipes.
 
 1. Is the website suitable for all family members?
 
 The website is suitable for all family members.
-Younger members may find some recipes too difficult but can still enjoy looking through the pages.
+Younger members may find some recipes too complicated but can still enjoy looking through the pages.
 
 2. Is it easy to navigate?
 
-The website is easy to navigate with simple links and buttons throughout the website.
+The website is easy to navigate, with simple links and buttons throughout the website.
 
-3. What age is the app intended for?
+3. What age is the app intended for?
 
 This website is intended for families of all ages wishing to share recipes.
   
+As a user, I would like to add my recipes and notes for viewing.
 
-As a user, I would like to be able to add my own recipes and notes for viewing.
+As a user, I would like to be able to edit my recipes and delete also.
 
-* You can do this by clicking on your personal profile page.
+![Edit Recipe](static/images/testing_images/edit_recipe_user.png)
+
+
+* You can do this by clicking on your profile page.
   
 ### User Story 4
 
-### Would this app be suitable for sharing recipes?
+### Would this app be suitable for sharing recipes?
 
-This website is suitable for sharing recipes, if you wish them to be shared.  
+This website is suitable for sharing recipes if you wish them to be shared.  
 
-1. Is the app easy to navigate?
 
-The website is easy to navigate with buttons and links throughtout the pages.
+1. Is the app easy to navigate?
 
-2. Are there educational advantages to this app?
+The website is easy to navigate with buttons and links throughout the pages.
 
-This website provides many educational links.  Providing opportunities to learn new recipes.  
+2. Are there educational advantages to this app?
 
-As a user, I would like to share my recipes with all family members and friends.
+This website provides many educational links. We are providing opportunities to learn new recipes.  
+
+As a user, I would like to share my recipes with all family members and friends.
 
 You can share all the recipes you add to the website.
 
@@ -314,7 +317,7 @@ You can share all the recipes you add to the website.
 
 ## Edit Recipe
 
-When updating a recipe the image does not save.
+When updating a recipe, the image does not save.
 
 ```
 <!-- Add url image link to recipe -->
@@ -347,7 +350,7 @@ Incorrect id used for input.  Changed "img_url" to "recipe_img_url"
 
 ### Fix 
 
-Incorrect argument give
+The incorrect argument is given.
 
 
 ## Error: Attribute type not allowed on element select at this point.
@@ -361,7 +364,7 @@ From line 73, column 17; to line 74, column 58
 Removed type="text" from select id.
 
 
-## Error: Attribute minlength is only allowed when the input type is email, password, search, tel, text, or url.
+## Error: Attribute minlength is only allowed when the input type is email, password, search, tel, text, or URL.
 
 From line 121, column 17; to line 121, column 125
 
@@ -389,15 +392,15 @@ From line 72, column 21; to line 72, column 60
 
 ### Fix
 
-Add alt attribute to image
+Add an alt attribute to the image
 
 ## Profile page
 
-I had difficulty with trying to get the images to align on the page
+I had difficulty with trying to get the images to align on the page.
 
 ![image error](static/images/testing_images/admin_profile.png)
 
-I fixed this error with some css styling.
+I fixed this error with some CSS styling.
 
 ![profile page](static/images/testing_images/profilealignment.png)
 
@@ -408,7 +411,7 @@ I had difficulty with the margins for the registration page when I was making it
 
 ![centering error](static/images/testing_images/centeringerror.png)
 
-I solved this issue with a media query and some css styling on the class.
+I solved this issue with a media query and some CSS styling on the class.
 
 ![centering error](static/images/testing_images/correctcentering.png)
 
@@ -419,28 +422,28 @@ They were very helpful in explaining that the type attribute was not required th
 
 ![favicon not loading](static/images/testing_images/faviconnotdisplaying.png)
 
-Once I removed this the favicon loaded as expected.
+Once I removed this, the favicon loaded as expected.
 
 ![favicon displaying](static/images/testing_images/favicon_image.png)
 
 ## Hero image too small
 
-My hero image would not take up the full width of the screen.
+My hero image would not take up the entire width of the screen.
 
-This was due to add a container to the base.html.
-As the container was set to a max of 80%, it would not allow the image to fill the screen.
+This was due to adding a container to the base.html.
+The container was set to a max of 80%, so it would not allow the image to fill the screen.
 
 ![Hero image too small](static/images/testing_images/hero_image_too_small.png)
 
 I corrected this by removing the container from the base.html.
 
-I then edited the css for the hero image so that it took up the correct amount of space.
+I then edited the CSS for the hero image to take up the correct amount of space.
 
 ![Hero image](static/images/testing_images/hero_image.png)
 
 ## Icons not displaying
 
-My icons were not displaying 
+My icons were not displaying. 
 
 ![Icon not displaying](static/images/testing_images/icon_not_displaying.png)
 
@@ -450,25 +453,25 @@ This was due to an update for the icons. Once I matched the correct link in my b
 
 ## Nav bar Error
 
-My nav bar items where been cut off at the sides in full screen view.
+My navbar items were being cut off at the sides in the full-screen view.
 
 ![nav bar error](static/images/testing_images/Login_missing_on_screen.png)
 
-I changed the sizing and this fixed the error.
+I changed the sizing, and this fixed the error.
 
 ![nav bar items fix](static/images/testing_images/navbar.png)
 
-## Social Links Aligment Error
+## Social Links Alignment Error
 
 I had difficulty in getting my social links to display in a line.
 This error was fixed by spending more time understanding Materialize and MDBootstrap.
-As it was my first time to use these, I was forgetting to take into consideration the built in classes.
+As it was my first time using these, I forgot to take into consideration the built-in classes.
 
 ![Social Links Error](static/images/testing_images/sociallinks_not_aligning.png)
 
 I decided to start again and had better luck with the second attempt(actually lots of trial and error).
 
-![Social links](static/images/testing_images/social_links.png)
+![Social Links](static/images/testing_images/social_links.png)
 
 
 
