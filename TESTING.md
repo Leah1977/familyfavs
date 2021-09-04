@@ -186,9 +186,9 @@ Form worked as expected.
 
 - Ensured the website was responsive on different mobiles using [BrowserStack](https://www.browserstack.com/)
 
-![Testing on a mobile device google pixel 4](static/images/testing_images/google pixel.png)
+![Testing on a mobile device google pixel 4](static/images/testing_images/googlepixel.png)
 
-![Testing on a mobile device  huawaii p30](static/images/testing_images/huawaii p30.png)
+![Testing on a mobile device  huawaii p30](static/images/testing_images/huawaiip30.png)
 
 
 - Testing was also performed on Safari and Chrome
@@ -229,54 +229,84 @@ Users can add their own recipes, once they have registered and logged in.
 
   As a website user, I want the app to be easy to use.  I would expect to be able to register and for my details to be secure and safe.
 
-### What I expect to find on a web application?
+I have used mongoDB to store all data.  
 
-  
+I have also used werkzeug.security for hashing passwords to enhance security.
+
+### What I expect to find on a web application?
 
 1. Can I view all recipes?
 
+All users can view all recipes on the home page.
+
 2. Can I create my own recipes?
+
+You can create your own recipes.  Log in once you have registered and click on the create recipe page.
+
+Fill out the form and add a link to the original recipe and an image if you wish.
+
+Click on create recipe and your recipe will be added to the database.
 
 3. Can I edit or delete my own recipes?
 
-  
+If you wish to edit a recipe a any stage you can do so by going into your profile page and 
+selecting the recipe you wish to edit.
+
+Once you click edit your recipe will be saved.
+
+A flash message will appear to tell you, you have successfully edited your recipe.
+
+You can also delete your recipe by clicking on the delete button on your profile page.
+
 
 ### User Story 3
 
-### Would this game be suitable for younger family members?
 
-  
+### Would this website be suitable for younger family members?
+
+This website is designed for the whole family to use.
+
+I would like this recipe to encourage families to share recipes with eachother.
 
 1. Is the website suitable for all family members?
 
+The website is suitable for all family members.
+Younger members may find some recipes too difficult but can still enjoy looking through the pages.
+
 2. Is it easy to navigate?
+
+The website is easy to navigate with simple links and buttons throughout the website.
 
 3. What age is the app intended for?
 
+This website is intended for families of all ages wishing to share recipes.
   
 
 As a user, I would like to be able to add my own recipes and notes for viewing.
+
+* You can do this by clicking on your personal profile page.
   
 ### User Story 4
 
 ### Would this app be suitable for sharing recipes?
 
-  
+This website is suitable for sharing recipes, if you wish them to be shared.  
 
 1. Is the app easy to navigate?
 
+The website is easy to navigate with buttons and links throughtout the pages.
+
 2. Are there educational advantages to this app?
 
-  
+This website provides many educational links.  Providing opportunities to learn new recipes.  
 
-As a user, I would like to play to share my recipes with all family members and friends.
+As a user, I would like to share my recipes with all family members and friends.
+
+You can share all the recipes you add to the website.
 
 ## Debugging
 
-
-##
-
-Edit Recipe
+## Edit Recipe
 
 When updating a recipe the image does not save.
 
@@ -305,9 +335,7 @@ Incorrect id used for input.  Changed "img_url" to "recipe_img_url"
 
 ```
 
-Original Recipe link not working
-
-Error
+## Error: Original Recipe link not working
 
 "recipe_url": request.form.get("recipe_img"),
 
@@ -316,7 +344,7 @@ Error
 Incorrect argument give
 
 
-* Error: Attribute type not allowed on element select at this point.
+## Error: Attribute type not allowed on element select at this point.
 
 From line 73, column 17; to line 74, column 58
 
@@ -326,7 +354,8 @@ From line 73, column 17; to line 74, column 58
 
 Removed type="text" from select id.
 
-* Error: Attribute minlength is only allowed when the input type is email, password, search, tel, text, or url.
+
+## Error: Attribute minlength is only allowed when the input type is email, password, search, tel, text, or url.
 
 From line 121, column 17; to line 121, column 125
 
@@ -336,7 +365,7 @@ From line 121, column 17; to line 121, column 125
 
 Removed minlenght from input id.
 
-* Error: Duplicate ID created_by.
+## Error: Duplicate ID created_by.
 
 From line 130, column 17; to line 130, column 127
 
@@ -344,9 +373,10 @@ From line 130, column 17; to line 130, column 127
 
 ### Fix
 
-*  Changed input id to "serves"
+Changed input id to "serves"
 
-Error: An img element must have an alt attribute, except under certain conditions. 
+
+## Error: An img element must have an alt attribute, except under certain conditions. 
 From line 72, column 21; to line 72, column 60
 
           <img src="static/images/pastasalad.jpg">↩ 
@@ -354,6 +384,24 @@ From line 72, column 21; to line 72, column 60
 ### Fix
 
 Add alt attribute to image
+
+## Profile page
+
+I had difficulty with trying to get the images to align on the page
+
+![image error](static/images/testing_images/admin_profile.png)
+
+I fixed this error with some css styling.
+
+![profile page](static/images/testing_images/profilealignment.png)
+
+
+I had difficulty with the margins for the registration page when I was making it responsive.
+
+![centering error](static/images/testing_images/centeringerror.png)
+
+I solved this issue with a media query and some css styling on the class.
+
 
 
 ## End of Testing Section
