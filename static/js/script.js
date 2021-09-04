@@ -23,9 +23,7 @@ function checkPasswordMatch() {
     return false;
 }
 
-
- 
-  // credit for code - Code Institute mini project
+// credit for code - Code Institute mini project
 
   validateMaterializeSelect();
   function validateMaterializeSelect() {
