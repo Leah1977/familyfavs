@@ -388,15 +388,14 @@ In this project, I used the following to help build my website.
 
 * [hover.css](https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css).
 
-* [html](www.html.com)
+* [MDBootstrap](https://mdbootstrap.com/) 
 
-* [css](www.css.co)
-
-* [JavaScript](www.javascript.com)
-
-* [MDBootstrap](https://mdbootstrap.com/)
+Code used from MDBootstrap for footer and then edited to suit needs.
 
 * [Materialize](https://materializecss.com/)
+
+Code used from Materialize for cards and then edited to suit needs.
+Code used from Materialize for header and side nav and then edited to suit needs.
 
 * [Heorku](https://dashboard.heroku.com/)
 
