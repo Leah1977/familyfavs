@@ -415,7 +415,7 @@ They were very helpful in explaining that the type attribute was not required th
 
 Once I removed this the favicon loaded as expected.
 
-![favicon displaying](static/images/testing_images/favicon-image.png)
+![favicon displaying](static/images/testing_images/favicon_image.png)
 
 ## Hero image too small
 
@@ -424,13 +424,46 @@ My hero image would not take up the full width of the screen.
 This was due to add a container to the base.html.
 As the container was set to a max of 80%, it would not allow the image to fill the screen.
 
-![Hero image too small](static/images/testing_images/hero-image-too-small.png)
+![Hero image too small](static/images/testing_images/hero_image_too_small.png)
 
 I corrected this by removing the container from the base.html.
 
 I then edited the css for the hero image so that it took up the correct amount of space.
 
-![Hero image](static/images/testing_images/hero-image.png)
+![Hero image](static/images/testing_images/hero_image.png)
+
+## Icons not displaying
+
+My icons were not displaying 
+
+![Icon not displaying](static/images/testing_images/icon_not_displaying.png)
+
+This was due to an update for the icons. Once I matched the correct link in my base.html.  The icons loaded.
+
+![Icons working](static/images/testing_images/icon_displaying.png)
+
+## Nav bar Error
+
+My nav bar items where been cut off at the sides in full screen view.
+
+![nav bar error](static/images/testing_images/Login_missing_on_screen.png)
+
+I changed the sizing and this fixed the error.
+
+![nav bar items fix](static/images/testing_images/navbar.png)
+
+## Social Links Aligment Error
+
+I had difficulty in getting my social links to display in a line.
+This error was fixed by spending more time understanding Materialize and MDBootstrap.
+As it was my first time to use these, I was forgetting to take into consideration the built in classes.
+
+![Social Links Error](static/images/testing_images/sociallinks_not_aligning.png)
+
+I decided to start again and had better luck with the second attempt(actually lots of trial and error).
+
+![Social links](static/images/testing_images/social_links.png)
+
 
 
 ## End of Testing Section
