@@ -262,6 +262,11 @@ def error(e):
     return render_template("/404.html"), 404
 
 
+# show user 500 error page if page does not exist
+@app.errorhandler(500)
+def error(e):
+    return render_template("/500.html"), 500
+
 # Run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

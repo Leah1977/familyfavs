@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
     $('.collapsible').collapsible();
     $('select').formSelect();
+    $('.modal').modal();
   
 
 // check password input matches with confirm password input
@@ -10,6 +11,7 @@ function checkPasswordMatch() {
     let passwordInput = password.value;
     let confirmPassword = document.getElementById("confirm_password");
     let confirmPasswordInput = confirmPassword.value;
+    
     if (confirmPasswordInput == passwordInput) {
         return true;
     }

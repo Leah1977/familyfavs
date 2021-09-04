@@ -21,7 +21,7 @@
         <!-- Fixed nav bar -->
         <nav class = "nav-extended text-shadow green darken-1">
             <div class="nav-wrapper">
-              <span><img src= "{{ url_for('static', filename='images/familyfavslogo.png') }}" alt="logo" class="logo"></span>
+              <a href ="{{ url_for('get_recipes') }}"><span><img src= "{{ url_for('static', filename='images/familyfavslogo.png') }}" alt="logo" class="logo"></span></a>
               <a href="{{ url_for('get_recipes') }}" class="brand-logo title">Family Favs</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
               <ul class="right hide-on-med-and-down">
