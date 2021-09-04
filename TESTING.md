@@ -396,12 +396,41 @@ I fixed this error with some css styling.
 ![profile page](static/images/testing_images/profilealignment.png)
 
 
+## Registration page
+
 I had difficulty with the margins for the registration page when I was making it responsive.
 
 ![centering error](static/images/testing_images/centeringerror.png)
 
 I solved this issue with a media query and some css styling on the class.
 
+![centering error](static/images/testing_images/correctcentering.png)
+
+## Favicon issue
+
+My favicon issue was not displaying.  After following the same guidelines from my previous project, I ended up contacting tutor support.
+They were very helpful in explaining that the type attribute was not required this time.
+
+![favicon not loading](static/images/testing_images/faviconnotdisplaying.png)
+
+Once I removed this the favicon loaded as expected.
+
+![favicon displaying](static/images/testing_images/favicon-image.png)
+
+## Hero image too small
+
+My hero image would not take up the full width of the screen.
+
+This was due to add a container to the base.html.
+As the container was set to a max of 80%, it would not allow the image to fill the screen.
+
+![Hero image too small](static/images/testing_images/hero-image-too-small.png)
+
+I corrected this by removing the container from the base.html.
+
+I then edited the css for the hero image so that it took up the correct amount of space.
+
+![Hero image](static/images/testing_images/hero-image.png)
 
 
 ## End of Testing Section
