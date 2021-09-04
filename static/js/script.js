@@ -3,12 +3,26 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('select').formSelect();
   
-    const deleteRecipe = document.getElementById('#delete-recipe-modal')
-    const deleteBtn = document.getElementById('modal')
-    
-    deleteRecipe.addEventListener('click', () => {
-      deleteBtn.focus()
-    })
+const deleteRecipe = document.getElementById('#delete-recipe-modal')
+const deleteBtn = document.getElementById('modal')
+
+deleteRecipe.addEventListener('click', () => {
+    deleteBtn.focus()
+})
+
+// check password input matches with confirm password input
+function checkPasswordMatch() {
+    let password = document.getElementById("password");
+    let passwordInput = password.value;
+    let confirmPassword = document.getElementById("confirm_password");
+    let confirmPasswordInput = confirmPassword.value;
+    if (confirmPasswordInput == passwordInput) {
+        return true;
+    }
+    alert("Password does not match");
+    return false;
+}
+
 
  
   // credit for code - Code Institute mini project
