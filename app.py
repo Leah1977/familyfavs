@@ -32,7 +32,7 @@ def search():
     # option for user to search for a recipe
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
-    return render_template("recipes.html", recipes=recipes)
+    return render_template("recipes.html", recipes=recipes,)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -103,17 +103,14 @@ def login():
 def profile(username):
     if session["user"]:
         # get the session username from the database
-        if session["user"] == "admin":
-            recipe = mongo.db.recipes.find()
-        else:
-            # get users recipes from the database
             username = mongo.db.users.find_one(
                 {"username": session["user"]})["username"]
             user = session.get("user").lower()
             user_recipes = list(
-                mongo.db.recipes.find({"created_by": session["user"]})          )
-        return render_template(
-            "profile.html", recipes=user_recipes, username=username)
+                mongo.db.recipes.find(
+                    {"created_by": session["user"]}))
+            return render_template(
+                "profile.html", recipes=user_recipes, username=username)
     return redirect(url_for("login.html"))
 
 
@@ -136,8 +133,7 @@ def create_recipe():
             "ingredients": request.form.get("ingredients"),
             "created_by": session["user"],
             "recipe_img_url": request.form.get("recipe_img_url"),
-            "recipe_url": request.form.get("recipe_img"),
-            "serves": request.form.get("serves"),
+            "recipe_url": request.form.get("recipe_url"),
             "prep_time": request.form.get("prep_time"),
             "serves": request.form.get("serves")
         }
@@ -160,15 +156,13 @@ def edit_recipe(recipe_id):
             "ingredients": request.form.get("ingredients"),
             "created_by": session["user"],
             "recipe_img_url": request.form.get("recipe_img_url"),
-            "recipe_url": request.form.get("recipe_img"),
-            "serves": request.form.get("serves"),
+            "recipe_url": request.form.get("recipe_url"),
             "prep_time": request.form.get("prep_time"),
             "serves": request.form.get("serves")
         }
         # update edited recipe to the database
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe successfully updated")
-        
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -273,4 +267,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)  # change to False before submitting
-

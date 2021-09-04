@@ -35,7 +35,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-green-text text-darken-4"></i>
-                <textarea id="method" name="method" minlength="5" maxlength="500" value="{{ recipe.method }}" class="materialize-textarea validate required"></textarea>
+                <textarea id="method" name="method" minlength="5" maxlength="800" value="{{ recipe.method }}" class="materialize-textarea validate required"></textarea>
                 <label for="Method">Method</label>
                 <span data-error="wrong" data-success="right">Please put each method on a new line</span>
             </div>
@@ -62,22 +62,23 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-camera prefix light-green-text text-darken-4"></i>
-                <input id="img_url" name="img_url" type="text" class="validate">
-                <label for="img_url">Recipe Image</label>
+                <input id="recipe_img_url" name="recipe_img_url" value="{{ recipe.recipe_img_url }}" type="text" class="validate">
+                <label for="recipe_img_url">Recipe Image</label>
             </div>
         </div>
+
         <!-- Add url link to recipe -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-camera prefix light-green-text text-darken-4"></i>
-                <input id="recipe_url" name="recipe_url" type="text" class="validate">
+                <input id="recipe_url" name="recipe_url" value="{{ recipe.recipe_url }}" type="text" class="validate">
                 <label for="recipe_url">Original Recipe</label>
             </div>
         </div>        
         <!-- submit and edit buttons -->
         <div class="row">
             <div class="col s12 center-align">
-                <a href="{{ url_for('get_recipes') }}" class="btn-large red text-shadow">Cancel<i class="fas fa-times-circle right"></i></a>
+                <a href="{{ url_for('get_recipes') }}" class="btn-large red text-shadow">Return to Profile<i class="fas fa-times-circle right"></i></a>
                 <button class="btn btn-large light-green darken-4 text-shadow-2" type="submit">Edit Recipe
                 <i class="fas fa-edit"></i>
                 </button>

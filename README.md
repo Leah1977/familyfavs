@@ -118,7 +118,6 @@ This page will allow the player to sign up for further information o
 
 The sign-up form is to register with our site to be notifie of updates.
 
-### Features left to implement
 
 # UX
 
@@ -358,7 +357,7 @@ This project will have specific responses depending on the users’ de
 There will be the main navigation system and structured layout.
 
   
-## Languages
+## Languages and Technologies
 
   
 
@@ -368,8 +367,14 @@ There will be the main navigation system and structured layout.
 
 * [JavaScript](http://www.javascript.com).
 
-## Technologies
- 
+* [Python]()
+
+* [JQuery]()
+
+* [Flask]()
+
+* []
+
 
 In this project, I used the following to help build my website.
   
@@ -388,6 +393,29 @@ In this project, I used the following to help build my website.
 
 * [JavaScript](www.javascript.com)
 
+* [MDBootstrap](https://mdbootstrap.com/)
+
+* [Materialize](https://materializecss.com/)
+
+* [Heorku](https://dashboard.heroku.com/)
+
+* [Github]()
+
+* [Gitpod]()
+
+* [Pep8online]()
+
+* []
+
+
+## Database
+
+* [MongoDB Atlas](https://cloud.mongodb.com/)
+
+I am using MongoDB Atlas for the Database.  MongoDB is a NoSQL cloud based database.
+
+
+
 ---
 ## In this project, I used the following to help build my website.
 
@@ -400,7 +428,7 @@ Code used throughout this project was learned and implemented from the
 
 ### [Google Fonts](https://fonts.googleapis.com/css2?)
 
-### Images
+### Images/Media
 
 Images for this app were located in the clipart-library
 
@@ -441,6 +469,13 @@ Photo by [Eaters Collective](https://unsplash.com/@eaterscollective?utm_source=u
 
  * Spaghetti Bolognese
  https://unsplash.com/photos/sA3wymYqyaI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+ * Strawberry Cheesecake
+ https://images.unsplash.com/photo-1511996571461-5ea529c6d9d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RyYXdiZXJyeSUyMGNoZWVzZWNha2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
+
+ * [BBCGoodFood](https://www.bbcgoodfood.com/).  Used for recipes displayed in the website.
+
+  BBC Food was used for all recipes.
  
 ## Further References
 
@@ -493,6 +528,14 @@ This project was deployed to Heroku with the following steps:
 
 11. Add the required keys as they are in your local env.py (i.e IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME)
 
+Key	Value
+DEBUG	FALSE
+IP	0.0.0.0
+MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+PORT	5000
+SECRET_KEY	<your_secret_key>
+
+
 12. Go to the app Overview page and when the build is finished, click 'Open App'
 
   
@@ -523,6 +566,10 @@ Much thanks to Code Institute Tutors for pointing me in the right di
 Thanks also to support from the Slack Community. 
 
 Thanks also to my husband and family for supporting me through this project and providing invaluable feedback.
+
+# Disclaimer Note
+
+This project is for educational purposes only.
 
 ### End of README
 

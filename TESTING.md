@@ -236,6 +236,37 @@ As a user, I would like to play to share my recipes with all family memb
 
 ## Debugging
 
+
+##
+
+Edit Recipe
+
+When updating a recipe the image does not save.
+
+```
+<!-- Add url image link to recipe -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-camera prefix light-green-text text-darken-4"></i>
+                <input id="img_url" name="img_url" type="text" class="validate">
+                <label for="img_url">Recipe Image</label>
+            </div>
+        </div>
+```
+
+### Fix
+Incorrect id used for input.  Changed "img_url" to "recipe_img_url"
+
+```
+<div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-camera prefix light-green-text text-darken-4"></i>
+                <input id="recipe_img_url" name="recipe_img_url" type="text" class="validate">
+                <label for="recipe_img_url">Recipe Image</label>
+            </div>
+        </div>
+
+```
 ## End of Testing Section
 
 [Return to Table of Contents](#table-of-contents)
