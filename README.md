@@ -4,6 +4,11 @@
 
 ### Click here for a link to the live project on Heroku [Family Favs](https://family-favs-project.herokuapp.com)
 
+Please use the following to access the Admin section of the website
+
+Username: admin
+Password: AdminAdmin
+
 A Data-Centric Development Project for Milestone 3.
   
 The project is a web application based on the creation of a recipe book.  It allows users to Create, Read, Update and Delete Recipes.
