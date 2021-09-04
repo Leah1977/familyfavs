@@ -25,7 +25,7 @@
 ## CSS Validator
 
 Tested on W3C CSS Validator
-
+[CSS Validation for https://family-favs-project.herokuapp.com/](https://jigsaw.w3.org/css-validator/validator)
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -34,11 +34,11 @@ Tested on W3C CSS Validator
     </a>
 </p>
 
-[CSS Validation for https://family-favs-project.herokuapp.com/]
+
 
 ## HTML Validator
 
-Pass code throught HTML Validator
+Pass code through HTML Validator
 [CSS Validation for https://family-favs-project.herokuapp.com/]
 
 [http://family-favs-project.herokuapp.com/get_recipes](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
@@ -53,23 +53,51 @@ Tested the site with jshint.com validator.
 
 ## Wireframe Comparison
 
+Comparing the deployed version against the development version(wireframes)
+
 * recipe profile page
 * main page 
 
+On the main page - I decided not to open the recipes in a separate page, but to include them on the home page.
+I thought this would look better visually.
 
+![Home Page](static/images/testing_images/homepage.png)
+
+This then changed the layout of the nav bar slightly by removing the recipes link.
+
+![NavBar](static/images/testing_images/navbar.png)
+
+* Registration
+
+I changed the layout of this slightly
+
+Instead of separate First Names and Second Names, I chose to let the user create a user name.
+
+![Username](static/images/testing_images/username.png)
+
+I also omitted the email as it was not required to register.
+
+* Create Recipe
+
+For the create recipe section.
+
+I kept this layout similar, but omitte a difficulty level
+
+I would like to add this as a further feature at a later stage.
 
 ## Lighthouse
 
 Tested the site using Lighthouse 
 
-![Lighthhouse Review](static/images/testing_images/lighthouse.png)
+![Lighthhouse Review](static/images/testing_images/lighthousereport.png)
 
 ## Mobile
 
 Tested the site for mobile-friendly usage
 
-[Mobile-Friendly Test-Google Services](https://search.google.com/test/mobile-friendly)
-![Mobile friendly approved](assets/images/
+[https://search.google.com/test/mobile-friendly](https://search.google.com/test/mobile-friendly?id=10B7YLqttRT7af4Ml0gyCA)
+
+![Mobile friendly approved](static/images/testing_images/mobilefriendly.png)
 
 ## Project Testing
 
@@ -102,7 +130,7 @@ Tested the social contact links on all pages. When you click on a social link, t
 
 **Expected**
 
-When you hover over the social link, it is expected that the link will change colour. When you click on the social link, you will be redirected to the relevant page in a new window.
+When you click on the social link, you will be redirected to the relevant page in a new window.
 
 **Testing**
 
@@ -111,10 +139,6 @@ Tested the social link on each page by clicking on the social links.
 **Result**
 
 The site acted as expected, and the link redirects you to a new page when you click on it.
-
-**Fix**
-
-No fix required.
 
 
 ### Tested the modal
@@ -136,35 +160,42 @@ No fix required.
 
 
 
-### Sign-up Form
+### Registration Form
 
 Tested the form. Entered in details to each relevant section.
-I checked the submit button by clicking on it.
+I checked that the validatiion was working by entering invalid data.
+The errors displayed as expected.
+
+I checked the registration button by clicking on it.
+A pop up message flashed up to confirm registration
+
+![Registration](static/images/testing_images/registration.png)
 
 
-**Expected**
-
-
-
-**Testing**
+### Login Form
 
 Tested the form by filling out details for all sections.
 
 **Result**
 
+Form worked as expected.
 
-
-Testing across various devices
+## Testing across various devices
 
 - Ensured the website was responsive on all pages through [Google Mobile Friendly](https://search.google.com/test/mobile-friendly)
 
 - Ensured the website was responsive on different mobiles using [BrowserStack](https://www.browserstack.com/)
-![Testing on a mobile device](.png)
+
+![Testing on a mobile device google pixel 4](static/images/testing_images/google pixel.png)
+
+![Testing on a mobile device  huawaii p30](static/images/testing_images/huawaii p30.png)
+
 
 - Testing was also performed on Safari and Chrome
 
-Several family members also carried out-Testing.
+Several family members also carried out-Testing on iphone 10 and SamsungA51
 
+Also devices tested well.
 
 ## User Stories
 
