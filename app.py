@@ -81,7 +81,7 @@ def login():
         if existing_user:
             # check hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Hello, {}".format(request.form.get("username")))
                 return redirect(url_for(
@@ -105,7 +105,6 @@ def profile(username):
         # get the session username from the database
             username = mongo.db.users.find_one(
                 {"username": session["user"]})["username"]
-            user = session.get("user").lower()
             user_recipes = list(
                 mongo.db.recipes.find(
                     {"created_by": session["user"]}))
@@ -264,8 +263,9 @@ def error(e):
 
 # show user 500 error page if page does not exist
 @app.errorhandler(500)
-def error(e):
+def myerror(e):
     return render_template("/500.html"), 500
+
 
 # Run the application
 if __name__ == "__main__":
