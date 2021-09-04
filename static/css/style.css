@@ -237,6 +237,14 @@ h3 {
     font-weight: 500;
 }
 
+.card .card-image .card-title {
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 5px;
+}
+
 .card-action a: hover {
     color: #fafafa;
 }
@@ -254,7 +262,8 @@ h3 {
     justify-content: center;
     margin: 10px 20px 10px 20px;
     border-radius: 50px;
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /* ------------------------------------------------------ recipe card */
 
@@ -291,8 +300,8 @@ h3 {
 /* ------------------------------------------------------ full recipe */
 
 .recipe-title {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .full-recipe-image {
@@ -300,7 +309,7 @@ h3 {
     height: 400px;
 
 }
-.car-action {
+.card-action {
     text-align: center;
     font-size: 0.6rem;
     margin: 0px;
@@ -403,6 +412,16 @@ label {
     color: #fafafa;
 }
 
+.form-outline {
+    background-color: #00000045;
+    border: 2px solid;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fafafa;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
 
 
 .social-links-title {
