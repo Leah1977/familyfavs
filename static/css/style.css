@@ -147,21 +147,6 @@ h3 {
     
 }
 
-.hero-btn {
-    text-decoration: none;
-    color: #d4d700;
-    background: #2B9348;
-    border-radius: 10px;
-    margin-right: 80px;
-    padding: 10px;
-    display: inline-block;
-}
-
-.hero-image .hero-btn:hover {
-    background: #d4d700;
-    color: #2B9348;;
-}
-
 .text-box {
     width: 100%;
     height: auto;
@@ -245,7 +230,7 @@ h3 {
     padding: 5px;
 }
 
-.card-action a: hover {
+.card-action a:hover {
     color: #fafafa;
 }
 

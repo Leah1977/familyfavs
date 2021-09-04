@@ -41,12 +41,12 @@ Tested on W3C CSS Validator
 Pass code throught HTML Validator
 [CSS Validation for https://family-favs-project.herokuapp.com/]
 
-[HomePage](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
-[https://family-favs-project.herokuapp.com/register](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fregister)
-[https://family-favs-project.herokuapp.com/login](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Flogin)
-[http://family-favs-project.herokuapp.com/profile/leah77](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
-[HomePage](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
-[HomePage](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
+[http://family-favs-project.herokuapp.com/get_recipes](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
+[https://family-favs-project.herokuapp.com/register](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fregister)
+[https://family-favs-project.herokuapp.com/login](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Flogin)
+[https://family-favs-project.herokuapp.com/create_recipe](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fcreate_recipe)
+[http://family-favs-project.herokuapp.com/get_categories](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_categories)
+
 ## JS Validator
 
 Tested the site with jshint.com validator.
@@ -285,16 +285,44 @@ Error
 Incorrect argument give
 
 
-Error: Attribute type not allowed on element select at this point.
+* Error: Attribute type not allowed on element select at this point.
 
 From line 73, column 17; to line 74, column 58
 
           <select id="category_name" name="category_name" ↩                    type="text" class="validate" required>↩  
 
-###
+### Fix
 
-Fix - removed type="text" from select id.
+Removed type="text" from select id.
 
+* Error: Attribute minlength is only allowed when the input type is email, password, search, tel, text, or url.
+
+From line 121, column 17; to line 121, column 125
+
+          <input id="prep_time" name="prep_time" minlength ="5" maxlength="50" type="number" class="validate" required>↩   
+
+### Fix
+
+Removed minlenght from input id.
+
+* Error: Duplicate ID created_by.
+
+From line 130, column 17; to line 130, column 127
+
+          <input id="created_by" name="created_by" minlength ="5" maxlength="50" type="number" class="validate" required>↩    
+
+### Fix
+
+*  Changed input id to "serves"
+
+Error: An img element must have an alt attribute, except under certain conditions. 
+From line 72, column 21; to line 72, column 60
+
+          <img src="static/images/pastasalad.jpg">↩ 
+
+### Fix
+
+Add alt attribute to image
 
 
 ## End of Testing Section
