@@ -3,12 +3,6 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('select').formSelect();
   
-const deleteRecipe = document.getElementById('#delete-recipe-modal')
-const deleteBtn = document.getElementById('modal')
-
-deleteRecipe.addEventListener('click', () => {
-    deleteBtn.focus()
-})
 
 // check password input matches with confirm password input
 function checkPasswordMatch() {
