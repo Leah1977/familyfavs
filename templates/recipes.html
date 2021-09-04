@@ -3,7 +3,7 @@
 
 <!-- Welcome -->
 <div class="container-fluid container-wrapper">
-    <div id="hero-outer">
+    <section id="hero-outer">
         <div class="hero-image">
             <div class = "container text-box">
                 <div class="hero-text">
@@ -13,7 +13,7 @@
                 </div>
             </div>    
         </div>
-    </div>
+    </section>
 </div>
 
 <div class ="container recipes">
@@ -46,17 +46,7 @@
                     <h3 class="light-green-text text-darken-4 center-align">All Recipes</h3>
                 </div>
             </div>
-            <ul class="collapsible">
-                {% for category in categories %}
-                <li>
-                    <div class="collapsible-header green-text light-green darken-4 text-shadow"><i class="fas fa-caret-down"></i>{{ category.category_name }}</div>
-                    <div class="collapsible-body">
-                        <strong>{{ recipe.recipe_name}}</strong>
-                        <p>{{ recipe.recipe_description }}</p> 
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
+            
             <div class="col s4 recipe-main-item">
                 <div class="row recipe-card">
                     <!-- credit to https://mdbootstrap.com/docs/standard/components/cards/-->
