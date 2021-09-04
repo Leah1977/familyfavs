@@ -41,6 +41,12 @@ Tested on W3C CSS Validator
 Pass code throught HTML Validator
 [CSS Validation for https://family-favs-project.herokuapp.com/]
 
+[HomePage](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
+[https://family-favs-project.herokuapp.com/register](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fregister)
+[https://family-favs-project.herokuapp.com/login](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Flogin)
+[http://family-favs-project.herokuapp.com/profile/leah77](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
+[HomePage](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
+[HomePage](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamily-favs-project.herokuapp.com%2Fget_recipes)
 ## JS Validator
 
 Tested the site with jshint.com validator.
@@ -267,6 +273,30 @@ Incorrect id used for input.  Changed "img_url" to "recipe_img_url"
         </div>
 
 ```
+
+Original Recipe link not working
+
+Error
+
+"recipe_url": request.form.get("recipe_img"),
+
+### Fix 
+
+Incorrect argument give
+
+
+Error: Attribute type not allowed on element select at this point.
+
+From line 73, column 17; to line 74, column 58
+
+          <select id="category_name" name="category_name" ↩                    type="text" class="validate" required>↩  
+
+###
+
+Fix - removed type="text" from select id.
+
+
+
 ## End of Testing Section
 
 [Return to Table of Contents](#table-of-contents)
