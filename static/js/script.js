@@ -4,6 +4,12 @@ $(document).ready(function(){
     $('select').formSelect();
     $('.modal').modal();
   
+    const myModal = document.getElementById('delete-{{recipe._id}}')
+   
+    myModal.addEventListener('shown.mdb.modal', () => {
+      myInput.focus()
+    })
+
 
 // check password input matches with confirm password input
 function checkPasswordMatch() {

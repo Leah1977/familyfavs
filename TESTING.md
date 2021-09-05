@@ -460,7 +460,7 @@ Code to use for modal.
 
 ```
 <!-- Modal Structure -->
-<div id="modal1" class="modal">
+<div id="#delete-{{recipe._id}}" class="modal">
   <div class="modal-content">
     <h4>Are you sure you want to delete your recipe?</h4>
     <p>Thanks for sharing your recipe with us.</p>
@@ -471,6 +471,16 @@ Code to use for modal.
 </div>
 
 ```
+
+```
+<a href="#delete-{{recipe._id}}" class="btn red accent-4 modal-trigger">Delete</a><br>   
+
+```
+
+After discussing with tutor support.  I have a better understanding that materialize and mdbootstrap might override each other.
+I will study this more and hopefully it will be issue I can resolve.
+
+I have left the modal for now, and will continue to work on my understanding as to why it wouldn't show.
 
 ## Nav bar Error
 
