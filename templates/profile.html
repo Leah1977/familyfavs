@@ -49,21 +49,29 @@
                                     {{ recipe.created_by }}
                                     </p>
                                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn green accent-4">Edit</a>
-                                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn red accent-4">Delete</a><br>    
+                                <a href="#delete-{{recipe._id}}" class="btn red accent-4 modal-trigger">Delete</a><br>    
                                 <a href="{{ url_for('full_recipe', recipe_id=recipe._id) }}" class="btn btn-success">Full Recipe</a><br>
                                 <a href="{{ url_for('get_recipes')}}">Return to Home Page</a>
                                 </div>
+                                <!-- Modal Structure -->
+                                <div id="delete-{{recipe._id}}" class="modal">
+                                    <div class="modal-content">
+                                        <h4 class="center-align">Are you sure you want to delete your recipe?</h4>
+                                        <p class="center-align">Thanks for sharing your recipe with us.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close waves-effect waves-green btn-flat">Confirm Delete</a>
+                                    </div>
+                                </div>
                         </div>
+                    
                     {% endfor %}
                 </div>
             </div>
         </div>
-    
-    
+       
     {% else %}
         <h3 class="red-text text-darken-4 center-align">No Recipes Added Yet!</h3>
 {% endif %}
-
-                  
 
 {% endblock %}

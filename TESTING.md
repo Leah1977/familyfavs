@@ -451,6 +451,27 @@ This was due to an update for the icons. Once I matched the correct link in my b
 
 ![Icons working](static/images/testing_images/icon_displaying.png)
 
+## Modal Error
+
+Tried to include the following for a modal.
+
+Unfortunately it kept shutting down the server and I was unable to complete it.
+Code to use for modal.
+
+```
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Are you sure you want to delete your recipe?</h4>
+    <p>Thanks for sharing your recipe with us.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close waves-effect waves-green btn-flat">Confirm Delete</a>
+  </div>
+</div>
+
+```
+
 ## Nav bar Error
 
 My navbar items were being cut off at the sides in the full-screen view.

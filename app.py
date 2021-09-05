@@ -249,7 +249,7 @@ def full_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
     if not recipe:
-        return render_template("/404.html")
+        return render_template("404.html")
 
     return render_template(
         "full_recipe.html", recipe=recipe)
@@ -258,17 +258,17 @@ def full_recipe(recipe_id):
 # show user 404 error page if page does not exist
 @app.errorhandler(404)
 def error(e):
-    return render_template("/404.html"), 404
+    return render_template("404.html"), 404
 
 
 # show user 500 error page if page does not exist
 @app.errorhandler(500)
 def myerror(e):
-    return render_template("/500.html"), 500
+    return render_template("500.html"), 500
 
 
 # Run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
+            debug=True)  # change to FALSE

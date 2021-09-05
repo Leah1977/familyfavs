@@ -33,7 +33,7 @@ The project is a web application based on the creation of a recipe book.  It all
 
 3. [Project-Display](#project-display)
 
-4. [Technologies](#technologies)
+4. [Languages and Technologies](#languages-and-technologies)
 
 5. [Testing](#testing)
 
@@ -79,6 +79,7 @@ All aspiring family cooks can enjoy the app.
 The app will resize according to the different screen sizes.
 
 ---
+## Features 
 
 #### This project will include four separate pages. 
 
@@ -234,7 +235,7 @@ As a returning user, I would expect
 
 •   My profile page is to be private for my use.
 
-•  Updated content.
+•   Updated content.
 
   
 
@@ -255,9 +256,6 @@ As a designer, I would expect
 •   To be able to add or delete categories.
   
 
-Ideas -  have a gallery to put up tried and tested recipes.
-
-  
 
 With these user stories in mind, I put together some wireframes.  I included all the primary requirements and issues that were raised from my user story research.
 
@@ -278,7 +276,7 @@ With these user stories in mind, I put together some wireframes.  I included all
 
 * Delete Recipe function
 
-## Future Features
+## Additional Features
 
 * I would like to add a favourites section.
 
@@ -344,7 +342,7 @@ I also used this for some main headings throughout the site.
 
 * Sans Serif will be used as a backup.
 
-## Additional Features
+
 
   
 ## Project display
@@ -559,7 +557,8 @@ SECRET_KEY  <your_secret_key>
   
 Much thanks to my mentor Nishant Kumar for giving great support and encouragement throughout my third Milestone Project.
 
-Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.
+Much thanks to Code Institute Tutors for pointing me in the right direction when I was going off course.  The support from the tutors
+was always excellent and their patience with me was much appreciated.
 
 Thanks also to support from the Slack Community. 
 
